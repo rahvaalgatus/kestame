@@ -1,0 +1,22 @@
+output_dir: public
+
+prune:
+  auto_prune: true
+
+data_sources:
+  - type: filesystem
+    encoding: utf-8
+
+deploy:
+  default:
+    kind: rsync
+    dst: "rahvaalgatus.ee:domeenid/www.rahvaalgatus.ee/kestame"
+    options:
+      - "--verbose"
+      - "--recursive"
+      - "--compress"
+      - "--itemize-changes"
+      - "--times"
+      - "--omit-dir-times"
+      - "--delete-after"
+      - "--chmod=u=rwX,go=rX"

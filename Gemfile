@@ -1,0 +1,12 @@
+source "https://rubygems.org"
+gem "nanoc", "~> 4.9"
+gem "adsf"
+gem "adsf-live"
+gem "haml"
+gem "sass"
+
+group :nanoc do
+	# Having guard-nanoc in the nanoc group adds `nanoc live` CLI.
+	gem "guard"
+	gem "guard-nanoc"
+end

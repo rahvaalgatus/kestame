@@ -1,0 +1,37 @@
+@import "reset";
+$blue: #0000F0;
+$page-width: 98rem;
+$page-padding: 2rem;
+
+body {
+	background-color: white;
+	color: black;
+	font-family: sans-serif;
+
+	// Without an explicit text-align, Internet Explorer (9 at least) has no
+	// text-align value to inherit from for <center>.
+	text-align: left;
+}
+
+center {
+	max-width: $page-width;
+	margin: 0 auto;
+	padding: 0 $page-padding;
+	text-align: inherit;
+
+	// Internet Explorer still centers things under <center> even with
+	// text-align: inherit.
+	& > * { margin-right: auto }
+}
+
+#header {
+	color: white;
+	background: $blue;
+	font-size: 5rem;
+	padding: 2rem;
+	text-align: center;
+}
+
+#main section {
+	padding: 4rem 0;
+}

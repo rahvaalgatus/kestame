@@ -1,0 +1,14 @@
+!!!
+%html(lang="et")
+	%head
+		%meta(charset="utf-8")
+		%title= @item[:title]
+		%meta(name="generator" content="Nanoc #{Nanoc::VERSION}")
+		%link(rel="stylesheet" href="/assets/default.css")
+
+	%body
+		%header#header
+			%center
+				%h1 Kogukondlikud arutelud #kestame
+
+		#main= yield
