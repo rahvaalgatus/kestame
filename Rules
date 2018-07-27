@@ -1,13 +1,20 @@
 ignore "/**/_*"
 
-compile "/index.haml" do
-	filter :haml
+compile "/home.haml" do
+	filter :haml, remove_whitespace: true
 	layout "/default.*"
 	write "/index.html"
 end
 
 compile "/**/*.haml" do
-	filter :haml
+	filter :haml, remove_whitespace: true
+	layout "/default.*"
+	write item.identifier.without_ext + "/index.html"
+end
+
+compile "/**/*.md" do
+  filter :kramdown
+	layout "/text.*"
 	layout "/default.*"
 	write item.identifier.without_ext + "/index.html"
 end
@@ -21,4 +28,4 @@ compile "/**/*" do
 	write item.identifier.to_s
 end
 
-layout "/**/*", :haml
+layout "/**/*", :haml, remove_whitespace: true

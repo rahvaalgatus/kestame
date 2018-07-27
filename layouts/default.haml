@@ -2,13 +2,29 @@
 %html(lang="et")
 	%head
 		%meta(charset="utf-8")
-		%title= @item[:title]
+		%title= @item[:title] + (@item[:page] != "home" ? " - #kestame" : "")
 		%meta(name="generator" content="Nanoc #{Nanoc::VERSION}")
 		%link(rel="stylesheet" href="/assets/default.css")
 
-	%body
-		%header#header
+	%body{id: item[:page] && "#{item[:page]}-page"}
+		%nav#nav
 			%center
-				%h1 Kogukondlikud arutelud #kestame
+				%a.home(href="/") #kestame
+
+				%menu
+					%a{link_to_unless_current("/algatusest/")} Algatusest
+					%a{link_to_unless_current("/probleemist/")} Probleemist
+					%a{link_to_unless_current("/kalender/")} Kalender
+					%a{link_to_unless_current("/korraldajale/")} Korraldajale
 
 		#main= yield
+
+		%footer#footer
+			%center
+				%p
+					%strong Kogukondlike arutelude koordinaator<br>
+					Maris Jõgeva<br>
+					<strong>e-post</strong>:
+					<a href="mailto:maris@rahvaalgatus.ee">maris@rahvaalgatus.ee</a><br>
+					<strong>tel</strong>:
+					<a href="tel:+37253421726">+372 53421726</a><br>

@@ -1,0 +1,6 @@
+---
+title: Probleemistik
+---
+**Senise sündimuse, suremuse ja rände suundumuste jätkumisel langeb Eesti rahvaarv aastaks 2100 1 318 000 inimeselt alla 800 000 inimeseni.** Aastaks 2025 on meid sama trendi jätkumisel 35 000 ja aastaks 2050 üle 200 000 võrra vähem kui täna. Teadlaste hinnangul on miljon see piir, millest allapoole ei ole riik kultuuri, majanduse ja innovatsiooni mõttes enam jätkusuutlik - juba täna on puudu õpetajaid, meditsiinitöötajaid, ehitusvaldkonnas inimesi, teatud valdkondade arendamiseks ei jätku piisavalt raha. Kõige kiiremini vähenebki Eestis tööealiste inimeste arv. Võrreldes aastaga 1990 on Eestis täna 132 000 tööealist inimest vähem. Aastaks 2050 peab põhimõtteliselt iga töötav inimene üleval veel ühte inimest. See tähendab kas oluliselt suuremat maksukoormust või seda, et riik peab oma elanikele pakutavaid teenuseid oluliselt koomale tõmbama.
+
+Ainuüksi sündimuse tõusust rahvaarvu vähenemise peatamiseks ei piisa. Inimarengu aruande 2016/2017 (link) hinnangul oleks kõige efektiivsem lahendus kombinatsioon sündide arvu tõusust ja nutikalt juhitud rändest. Rahvastikuprobleemidega tegelemine eeldab aga ka tarka majandust, aktiivsest tööhõivet ning võrdselt kõigi inimeste väärtustamis ja kaasamist.

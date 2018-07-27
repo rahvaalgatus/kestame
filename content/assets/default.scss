@@ -1,16 +1,67 @@
 @import "reset";
+$page-width: 100rem;
+$page-padding: 6rem;
+$text-size: 1.6rem;
+$text-line-height: 1.6;
+
+// https://brand.estonia.ee/et/disain/varvid/
+$headline-font: Aino Headline, Aino, sans-serif;
 $blue: #0000F0;
-$page-width: 98rem;
-$page-padding: 2rem;
+$link-blue: #0078ff;
+$green: #65a580;
+$dark-grey: #323334;
+$light-grey: #f0f1f2;
+
+@font-face {
+  font-family: "Aino";
+  font-weight: normal;
+  font-style: normal;
+
+  src: url("/assets/aino-regular.eot");
+  src:
+		url("/assets/aino-regular.eot?#iefix") format("embedded-opentype"),
+		url("/assets/aino-regular.woff") format("woff"),
+		url("/assets/aino-regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Aino";
+  font-weight: bold;
+  font-style: normal;
+
+  src: url("/assets/aino-bold.eot");
+  src:
+		url("/assets/aino-bold.eot?#iefix") format("embedded-opentype"),
+		url("/assets/aino-bold.woff") format("woff"),
+		url("/assets/aino-bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Aino Headline";
+  font-weight: normal;
+  font-style: normal;
+
+  src: url("/assets/aino-headline.eot");
+  src:
+		url("/assets/aino-headline.eot?#iefix") format("embedded-opentype"),
+		url("/assets/aino-headline.woff") format("woff"),
+		url("/assets/aino-headline.ttf") format("truetype");
+}
 
 body {
 	background-color: white;
-	color: black;
-	font-family: sans-serif;
+	color: $dark-grey;
+	font-family: Aino, sans-serif;
 
 	// Without an explicit text-align, Internet Explorer (9 at least) has no
 	// text-align value to inherit from for <center>.
 	text-align: left;
+}
+
+strong { font-weight: bold; }
+
+section {
+	padding: $page-padding 0;
 }
 
 center {
@@ -24,14 +75,215 @@ center {
 	& > * { margin-right: auto }
 }
 
-#header {
-	color: white;
-	background: $blue;
-	font-size: 5rem;
-	padding: 2rem;
-	text-align: center;
+.grey-section { background-color: $light-grey; }
+
+.text-section {
+	font-size: $text-size;
+	line-height: $text-line-height;
+
+	center {
+		max-width: 80rem;
+	}
+
+	h2 { margin-top: 4rem; }
+	h3 { margin-top: 4rem; }
+
+	ul {
+		margin: ($text-size * $text-line-height) 0;
+
+		li {
+			margin-left: 4rem;
+			list-style-type: disc;
+		}
+	}
+
+	img {
+		max-width: 100%;
+	}
 }
 
-#main section {
+.subheading,
+.text-section h2 {
+	font-size: 3.6rem;
+	font-family: $headline-font;
+	color: $blue;
+	margin-bottom: 6rem;
+	line-height: 1.5;
+}
+
+.subsubheading,
+.text-section h3 {
+	color: $blue;
+	font-size: 2.4rem;
+	line-height: 1.5;
+}
+
+.subsubheading,
+.text-section h4 {
+	color: $blue;
+	font-size: 2rem;
+	line-height: 1.5;
+}
+
+.paragraph,
+.text-section p {
+	font-size: $text-size;
+	line-height: $text-line-height;
+
+	& + p { margin-top: 1.6 * 1.6rem; }
+
+	a {
+		border-bottom: 3px solid $link-blue;
+		&:hover { color: $link-blue; }
+	}
+}
+
+.blue-button,
+.green-button,
+.white-button {
+	display: inline-block;
+	padding: 0 2.5rem;
+	line-height: 4rem;
+	border-radius: 2rem;
+	text-transform: uppercase;
+	letter-spacing: 0.2rem;
+	font-weight: bold;
+	font-size: 1.4rem;
+}
+
+.blue-button { background: $blue; color: white; }
+.green-button { background: $green; color: white; }
+.white-button { background: white; color: $blue; border: 1px solid $blue; }
+
+#nav,
+#header,
+#footer { color: white; background: $blue; }
+
+#nav {
+	padding: 2rem 0;
+	overflow: hidden;
+	line-height: 3rem;
+
+	.home {
+		font-weight: bold;
+		padding: 0 1rem;
+		font-size: 1.8rem;
+		font-family: $headline-font;
+	}
+
+	a {
+		display: inline-block;
+		padding: 0 1rem;
+	}
+
+	menu {
+		float: right;
+	}
+
+	menu a {
+		border-radius: 0.3rem;
+		border: 1px solid transparent;
+		font-size: 1.3rem;
+
+		&.selected {
+			color: $blue;
+			background-color: white;
+			font-weight: bold;
+		}
+
+		&:hover {
+			border-color: white;
+		}
+
+		& + a { margin-left: 2rem; }
+	}
+}
+
+#header {
+	padding: 2rem 0 6rem;
+
+	h1 {
+		max-width: 60rem;
+		font-size: 4.8rem;
+		font-family: $headline-font;
+	}
+}
+
+#home-page {
+	#welcome {
+		img {
+			float: right;
+			margin-left: 2rem;
+			max-width: 50%;
+		}
+
+		p {
+			max-width: 50%;
+		}
+
+		menu {
+			margin-top: 4rem;
+			a + a { margin-left: 4rem; }
+		}
+	}
+
+	#join {
+		img {
+			max-width: 20rem;
+		}
+
+		.join-through {
+			padding: 0 2rem;
+			display: inline-block;
+			vertical-align: top;
+			max-width: 33.33%;
+			text-align: center;
+
+			img {
+				display: block;
+				margin: 0 auto;
+				width: 10rem;
+			}
+
+			h4 {
+				margin: 2rem 0;
+				text-align: center;
+			}
+
+			p { text-align: left; }
+			a { margin-top: 2rem; }
+		}
+	}
+}
+
+#counter {
+	padding-bottom: 10rem;
+
+	ul {
+		text-align: center;
+	}
+
+	li {
+		vertical-align: top;
+		padding: 0 4rem;
+		max-width: 30rem;
+		color: $blue;
+		display: inline-block;
+		font-size: 2.2rem;
+		line-height: 1.5;
+
+		em {
+			font-family: $headline-font;
+			font-size: 7rem;
+			display: block;
+		}
+	}
+}
+
+#footer {
 	padding: 4rem 0;
+	font-size: 1.4rem;
+	line-height: 1.6;
+	background: $blue;
+	color: white;
 }
