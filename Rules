@@ -1,3 +1,8 @@
+# https://github.com/gettalong/kramdown/issues/532
+require "kramdown"
+Kramdown::Parser::Html::Constants::HTML_CONTENT_MODEL_BLOCK.push "center"
+Kramdown::Parser::Html::Constants::HTML_CONTENT_MODEL["center"] = :block
+
 preprocess do
   @config[:env] = ENV["ENV"] if ENV["ENV"]
 end
@@ -12,12 +17,11 @@ end
 
 compile "/**/*.haml" do
 	filter :haml, remove_whitespace: true
-	layout "/default.*"
 	write item.identifier.without_ext + "/index.html"
 end
 
 compile "/**/*.md" do
-  filter :kramdown
+  filter :kramdown, parse_block_html: true, parse_span_html: true
 	layout "/text.*"
 	layout "/default.*"
 	write item.identifier.without_ext + "/index.html"
