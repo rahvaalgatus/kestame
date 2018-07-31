@@ -4,6 +4,7 @@
 		%meta(charset="utf-8")
 		%title= @item[:title] + (@item[:page] != "home" ? " - #kestame" : "")
 		%meta(name="generator" content="Nanoc #{Nanoc::VERSION}")
+		%meta(name="viewport" content="width=device-width, initial-scale=1")
 		%link(rel="stylesheet" href="/assets/default.css")
 
 		- if @config[:env] == "production"

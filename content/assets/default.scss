@@ -1,8 +1,11 @@
 @import "reset";
 $page-width: 100rem;
 $page-padding: 6rem;
+$page-padding-mobile: 3rem;
 $text-size: 1.6rem;
 $text-line-height: 1.6;
+$tablet-width: 865px;
+$mobile-width: 569px;
 
 // https://brand.estonia.ee/et/disain/varvid/
 $headline-font: Aino Headline, Aino, sans-serif;
@@ -11,6 +14,15 @@ $link-blue: #0078ff;
 $green: #65a580;
 $dark-grey: #323334;
 $light-grey: #f0f1f2;
+
+@mixin tablet {
+  @media only screen and (min-width: $mobile-width + 1px) and
+    (max-width: $tablet-width) { @content }
+}
+
+@mixin mobile {
+  @media only screen and (max-width: $mobile-width) { @content }
+}
 
 @font-face {
   font-family: "Aino";
@@ -68,7 +80,12 @@ body {
 strong { font-weight: bold; }
 
 section {
-	padding: $page-padding 0;
+	padding: 6rem 0;
+
+	@include mobile {
+		padding-top: 4rem;
+		padding-bottom: 4rem;
+	}
 }
 
 center {
@@ -76,6 +93,11 @@ center {
 	margin: 0 auto;
 	padding: 0 $page-padding;
 	text-align: inherit;
+
+	@include mobile {
+		padding-left: $page-padding-mobile;
+		padding-right: $page-padding-mobile;
+	}
 
 	// Internet Explorer still centers things under <center> even with
 	// text-align: inherit.
@@ -175,7 +197,6 @@ center {
 
 	.home {
 		font-weight: bold;
-		padding: 0 1rem;
 		font-size: 1.8rem;
 		font-family: $headline-font;
 	}
@@ -190,9 +211,11 @@ center {
 	}
 
 	menu a {
+		//display: inline-block;
 		border-radius: 0.3rem;
 		border: 1px solid transparent;
 		font-size: 1.3rem;
+		margin-left: 1rem;
 
 		&.selected {
 			color: $blue;
@@ -203,8 +226,23 @@ center {
 		&:hover {
 			border-color: white;
 		}
+	}
 
-		& + a { margin-left: 2rem; }
+	@include tablet {
+		line-height: 2;
+
+		.home { display: block; font-size: 2.4rem; }
+		menu { float: none; }
+		menu a { margin: 0.5rem 0.5rem 0.1rem 0; }
+	}
+
+	@include mobile {
+		line-height: 2;
+
+		center { padding: 0 2rem; }
+		.home { display: block; font-size: 2.4rem; }
+		menu { float: none; }
+		menu a { margin: 0.5rem 0.5rem 0.1rem 0; }
 	}
 }
 
@@ -215,6 +253,11 @@ center {
 		max-width: 60rem;
 		font-size: 4.8rem;
 		font-family: $headline-font;
+	}
+
+	@include mobile {
+		padding: 0 0 3rem;
+		h1 { font-size: 3rem; }
 	}
 }
 
@@ -227,6 +270,7 @@ center {
 		img {
 			float: right;
 			margin-left: 2rem;
+			margin-bottom: 2rem;
 			max-width: 50%;
 		}
 
@@ -236,13 +280,23 @@ center {
 
 		menu {
 			margin-top: 4rem;
-			a + a { margin-left: 4rem; }
+			a { margin-right: 4rem; }
+		}
+
+		@include tablet {
+			p { max-width: none; }
+		}
+
+		@include mobile {
+			img { float: none; max-width: 100%; margin-bottom: 2rem; }
+			p { max-width: none; }
+			menu a { margin-top: 1rem; margin-right: 1rem; }
 		}
 	}
 
 	#join {
 		img {
-			max-width: 20rem;
+			max-width: 100%;
 		}
 
 		.join-through {
@@ -266,29 +320,38 @@ center {
 			p { text-align: left; }
 			a { margin-top: 2rem; }
 		}
+
+		@include mobile {
+			.join-through {
+				max-width: none;
+				display: block;
+
+				& + .join-through { margin-top: 4rem; }
+			}
+		}
 	}
-}
 
-#counter {
-	padding-bottom: 10rem;
+	#counter {
+		padding-bottom: 10rem;
 
-	ul {
-		text-align: center;
-	}
+		ul {
+			text-align: center;
+		}
 
-	li {
-		vertical-align: top;
-		padding: 0 4rem;
-		max-width: 30rem;
-		color: $blue;
-		display: inline-block;
-		font-size: 2.2rem;
-		line-height: 1.5;
+		li {
+			vertical-align: top;
+			padding: 0 4rem;
+			max-width: 30rem;
+			color: $blue;
+			display: inline-block;
+			font-size: 2.2rem;
+			line-height: 1.5;
 
-		em {
-			font-family: $headline-font;
-			font-size: 7rem;
-			display: block;
+			em {
+				font-family: $headline-font;
+				font-size: 7rem;
+				display: block;
+			}
 		}
 	}
 }
