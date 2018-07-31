@@ -1,3 +1,7 @@
+preprocess do
+  @config[:env] = ENV["ENV"] if ENV["ENV"]
+end
+
 ignore "/**/_*"
 
 compile "/home.haml" do
