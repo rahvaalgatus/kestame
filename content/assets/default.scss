@@ -48,10 +48,17 @@ $light-grey: #f0f1f2;
 		url("/assets/aino-headline.ttf") format("truetype");
 }
 
+html,
+body {
+	height: 100%;
+}
+
 body {
 	background-color: white;
 	color: $dark-grey;
 	font-family: Aino, sans-serif;
+	display: flex;
+	flex-direction: column;
 
 	// Without an explicit text-align, Internet Explorer (9 at least) has no
 	// text-align value to inherit from for <center>.
@@ -161,7 +168,6 @@ center {
 
 #nav {
 	padding: 2rem 0;
-	overflow: hidden;
 	line-height: 3rem;
 
 	.home {
@@ -207,6 +213,10 @@ center {
 		font-size: 4.8rem;
 		font-family: $headline-font;
 	}
+}
+
+#main {
+	flex-grow: 1;
 }
 
 #home-page {
@@ -284,6 +294,4 @@ center {
 	padding: 4rem 0;
 	font-size: 1.4rem;
 	line-height: 1.6;
-	background: $blue;
-	color: white;
 }
