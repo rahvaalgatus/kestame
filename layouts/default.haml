@@ -8,8 +8,10 @@
 		%link(rel="stylesheet" href="/assets/default.css")
 
 		- if @config[:env] == "production"
+			%script
+				function args() { return arguments }
+				dataLayer = [args("js", new Date), args("config", "UA-122944734-1")]
 			%script(async src="https://www.googletagmanager.com/gtag/js?id=UA-122944734-1")
-			%script dataLayer = [["js", new Date], ["config", "UA-122944734-1"]]
 
 	%body{id: item[:page] && "#{item[:page]}-page"}
 		%nav#nav
