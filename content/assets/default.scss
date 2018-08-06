@@ -370,12 +370,18 @@ center {
 	#supporters {
 		vertical-align: top;
 		display: inline-block;
-		width: 50%;
 
 		@include mobile { width: auto; }
 	}
 
+	#contact {
+		width: 33%;
+
+		@include tablet { width: 50%; }
+	}
+
 	#supporters {
+		width: 66%;
 		padding-left: 2rem;
 
 		img {
@@ -383,7 +389,19 @@ center {
 			height: 8rem;
 		}
 
-		li + li { margin-top: 1rem; }
+		li {
+			display: inline-block;
+			margin-right: 2rem;
+		}
+
+		@include tablet {
+			width: 50%;
+
+			li {
+				display: block;
+				margin-top: 1rem;
+			}
+		}
 
 		@include mobile {
 			padding-left: 0;
