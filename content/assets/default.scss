@@ -255,6 +255,8 @@ center {
 		font-family: $headline-font;
 	}
 
+	&.text-header center { max-width: 80rem; }
+
 	@include mobile {
 		padding: 0 0 3rem;
 		h1 { font-size: 3rem; }
