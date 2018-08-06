@@ -1,10 +1,12 @@
 ---
 title: Arutelude kalender
 ---
-Esimesed Kogukondlikud arutelud toimuvad enamasti novembris 2018. Oma huvist arutelu korraldada on võimalik juba praegu anda teada.
 
-Maris Jõgeva  
-e-post: [maris@rahvaalgatus.ee](mailto:maris@rahvaalgatus.ee)  
-tel: [+372 53421726](tel:+37253421726)
+Arutelude kaardile lisamise võimaluse avame peatselt. Kaardilt on edaspidi võimalik näha kus arutelu on plaanitud, millal see aset leiab ning kelle poole osalemissoovist teada andmiseks või küsimustega pöörduda. Kui arutelu on juba toimunud, leiad kaardilt tulemuste kohta kokkuvõtliku info.
+
+Oma huvist arutelu korraldada anna teada [maris@rahvaalgatus.ee](mailto:maris@rahvaalgatus.ee)  
 
 ![Eesti kaart](/assets/counties.png)
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTA4MzgyOTY0XX0=
+-->
