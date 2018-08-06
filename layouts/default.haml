@@ -2,7 +2,7 @@
 %html(lang="et")
 	%head
 		%meta(charset="utf-8")
-		%title= @item[:title] + (@item[:page] != "home" ? " - #kestame" : "")
+		%title= @item[:title] + (@item[:page] != "home" ? " - #kuidaskestame" : "")
 		%meta(name="generator" content="Nanoc #{Nanoc::VERSION}")
 		%meta(name="viewport" content="width=device-width, initial-scale=1")
 		%link(rel="stylesheet" href="/assets/default.css")
@@ -16,7 +16,7 @@
 	%body{id: item[:page] && "#{item[:page]}-page"}
 		%nav#nav
 			%center
-				%a.home(href="/") #kestame
+				%a.home(href="/") #kuidaskestame
 
 				%menu
 					%a{link_to_unless_current("/algatusest/")} Algatusest
