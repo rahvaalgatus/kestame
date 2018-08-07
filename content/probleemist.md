@@ -32,8 +32,8 @@ Eestis on täna töövõimetuspensionil 10% tööealisest elanikkonnast (üle 90
 <section class="white-section text-section"><center>
 ## Probleemistikku aitavad rohkem avada järgmised materjalid ja arutelud:
 
-- [Eesti inimarengu aruanne. Eesti rändeajastul. Eesti Koostöö Kogu, 2017](**[https://inimareng.ee/static_assets/pdf/Eesti%20inimarengu%20aruanne%202016-17.pdf](https://inimareng.ee/static_assets/pdf/Eesti%20inimarengu%20aruanne%202016-17.pdf)**)
-- [Rahvastiku areng. Statistikaamet, 2015](https://www.stat.ee/valjaanne-2015_rahvastiku-areng) 
+- [Eesti inimarengu aruanne. Eesti rändeajastul. Eesti Koostöö Kogu, 2017](https://inimareng.ee/static_assets/pdf/Eesti%20inimarengu%20aruanne%202016-17.pdf)
+- [Rahvastiku areng. Statistikaamet, 2015](https://www.stat.ee/valjaanne-2015_rahvastiku-areng)
 - [Eesti rahvastik. Viis põlvkonda ja kümme loendust. Statistikaamet, 2011](http://www.stat.ee/valjaanne-2011_eesti-rahvastik-viis-polvkonda-ja-kumme-loendust) 
 - [Suud puhtaks: Rahva püsimajäämine 14.02.2018](https://www.err.ee/683262/suud-puhtaks-haritud-naistel-on-vaja-sunnitamiseks-rohkem-otsustusoigust)
 - [Eesti sündimusareng ja sündimuse mõjutamise võimalused: lühianalüüs. Tallinna Ülikool, 2014](https://www.sm.ee/sites/default/files/content-editors/Lapsed_ja_pered/Perehuvitised/puur_poldma_sundimus_ja_selle_mojutamise_voimalused_28022014.pdf)
