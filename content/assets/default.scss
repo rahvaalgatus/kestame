@@ -373,7 +373,10 @@ center {
 		vertical-align: top;
 		display: inline-block;
 
-		@include mobile { width: auto; }
+		@include mobile {
+			display: block;
+			width: auto;
+		}
 	}
 
 	#contact {
