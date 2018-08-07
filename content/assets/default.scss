@@ -109,6 +109,7 @@ center {
 .text-section {
 	font-size: $text-size;
 	line-height: $text-line-height;
+	hyphens: manual;
 
 	center {
 		max-width: 80rem;
