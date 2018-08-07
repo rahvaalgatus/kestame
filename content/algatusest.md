@@ -10,11 +10,12 @@ Kodanikualgatuslikud #kuidasmekestame arutelud aitavad luua platvormi ühiskondl
 -   Eesti rahvastiku seisu ja rahvastiku vähenemisest tulenevate probleemide teadvustamine
 -   võimalike lahendussuundade teadvustamine
 -   ühisloomes lahenduste otsimine ja ettepanekute tegemine
-    
 
 Arutelude formaat sisaldab rahvastikutrendidega seotud info ja faktide avamist, lootuste ja hirmude jagamist, ühisosa otsimist ning probleemidele lahendusideede väljatöötamist. Arutelu tulemuseks on tegevusettepanekud sellest, mida iga kogukond ise saab ette võtta oma elujõu hoidmiseks ning rahvastikumuutustega toimetulemiseks, aga ka ettepanekud kohalikule omavalitsusele ja riigile vajalikeks otsusteks. Mõned mõjusatest lahendusideedest sobivad kohalike omavalitsuste ja riigi tulevikustrateegiatesse ja -tegevuskavadesse, teised nõuavad laiemat ühiskondlikku lepet. Viimaste puhul aitame sõnastada algatused, mida peale arutelude toimumist ühisloomes täpsustakse kuni neil on piisavalt toetust [kollektiivse pöördumisena](https://rahvaalgatus.ee) Riigikogule esitamiseks
 
 ## Ettepanekute teekond poliitikakujundajateni
+
+[![Pilt teekonnast poliitikakujundajateni](/assets/teekond.png)](/assets/teekond.png){:.image-link}
 
 ## Algatajad
 

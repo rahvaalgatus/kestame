@@ -164,7 +164,7 @@ center {
 
 .paragraph a,
 .text-section a {
-	&:not(.blue-button) {
+	&:not(.blue-button):not(.image-link) {
 		border-bottom: 3px solid $link-blue;
 		&:hover { color: $link-blue; }
 	}
