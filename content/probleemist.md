@@ -9,24 +9,36 @@ sections: true
 Kõige kiiremini vähenebki Eestis tööealiste inimeste arv. Võrreldes aastaga 1990 on Eestis täna 132 000 tööealist inimest vähem. Aastaks 2050 peab põhimõtteliselt iga töötav inimene üleval lisaks endale veel ühte inimest. See tähendab kas oluliselt suuremat maksukoormust või seda, et riik peab oma elanikele pakutavaid teenuseid oluliselt reformima või koomale tõmbama.
 
 Ainuüksi sündimuse tõusust rahvaarvu vähenemise peatamiseks ei piisa. [Eesti inimarengu aruande 2016/2017](https://inimareng.ee) hinnangul on vajalik kombinatsioon sündide arvu tõusust ja nutikalt juhitud rändest. Rahvastikuprobleemidega toimetulemine eeldab aga ka tarka majandust, aktiivset tööturul osalemist ning võrdselt kõigi inimeste väärtustamist ja kaasamist.
+
+{:.centered}
+[Faktileht](/rahvastik.pdf){:.blue-button}
 </center></section>
 
 <section class="grey-section text-section"><center>
 ## Kas sündimuse tõus aitaks?
 
 Ainuüksi sündimuse tõusust rahvaarvu vähenemise peatamiseks ei piisa. Täna on Eesti sündimuskordaja (1,66) tugevalt alla taastetaseme (2,1). Isegi, kui suudaksime sündimuse koheselt taastetasemeni tõsta, on meid aastaks 2100 ikka vähem kui praegu. Sündimuse tõstmist komplitseerib tõsiasi, et pere suurust puudutavaid otsuseid mõjutab lai tegurite kooslus ja põhjuslikku seost erinevate perepoliitika meetmete ja laste arvu vahel on keeruline on välja tuua. Vaatamata sünnitusea kasvule näitab võrdlus teiste Euroopa riikidega, et teatav võimalus sündimuskäitumise mõjutamiseks on siiski olemas. Tihtipeale on just pehmed tegurid nagu ühiskondlikud hoiakud peredesse ja tööandjate suhtumine vanematesse tööl, mis mõjutavad soovi saada täiendav laps. Eestis on uuringud näidanud, et perede soovitud ja tegelik laste arv on erinevad. Põhjused võivad olla majanduslikud, kuid sagedamini on need seotud ebastabiilsuse ning turvatunde puudumisega - näiteks ei ole suurem eluase lastega peredele kättesaadav, peredel puudub piisav tugivõrgustik, rahulolematus paarisuhtega, töö- ja pereelu ühildamise keerulisus.
+
+{:.centered}
+[Faktileht](/sündimus.pdf){:.blue-button}
 </center></section>
 
 <section class="white-section text-section"><center>
 ## Kas nutikamalt juhitud ränne aitaks?
 
 Viimased kolm aastat on Eesti rändesaldo olnud positiivne. Ligi pooled sisserändajatest olid 2017. aastal Eesti kodakondsusega isikud. Teistest riikidest enam tuli Venemaa, Ukraina, Soome ja Läti kodanikke, kes on rännanud siia peamiselt töötamise, pere ja õppimisega seotud põhjustel. Kuigi viimasel aastal saabus Eesti kodanikke rohkem kui lahkus, siis jätkuva suure väljarände põhjuseks on ebavõrdsus - eelkõige just palgaerinevused ja ääremaastumine. Täna elab välismaal erinevatel andmetel 150 000 - 200 000 eestlast, mis on umbes 15% kõikidest eestlastest. Kui ka pooled väljarännanutest tagasi pöörduksid, ei piisaks sellest rahvastiku vähenemise pidurdamiseks. Võttes arvesse Euroopa demograafilisi ning majanduslikke arenguid ja väljakutseid, võistlevad riigid omavahel vajalike oskustega inimeste pärast parandamaks riigi konkurentsivõimet ja eluolu. Uuringud näitavad, et eestlased on välismaalaste osas pigem negatiivsemalt meelestatud ja ettevaatlikud ega hinda sisserändajate võimalikke positiivseid panuseid (sh kultuurielu rikastamine, tööjõu puuduse lahendamine).
+
+{:.centered}
+[Faktileht](/ränne.pdf){:.blue-button}
 </center></section>
 
 <section class="grey-section text-section"><center>
 ## Kas targem tööhõivekorraldus ja inimeste parem kaasatus aitaks?
 
 Eestis on täna töövõimetuspensionil 10% tööealisest elanikkonnast (üle 90 000 inimese), kuigi on valdkondi, kus vähemalt osadel neist oleks võimalik osaleda. Ligi 30 000 noort vanuses 15-29 ei õpi ega tööta kusagil. Suur probleem on struktuurne tööjõupuudus ja tööjõuturu osalejate erialase ettevalmistuse ja kompetentside ebakõla - näiteks ehitussektoris on tuhandeid inimesi puudu, samal ajal on Eestis 40 000 töötut. Mitteaktiivse tööjõu arvelt oleks 10-aastases perspektiivis võimalik igal aastal Eesti tööturule tuua vähemalt 2000 lisatöökätt, kuid ka ka see ressurss ammendub mõne aja möödudes. Tööhõive ja tööjõus osalemise määr on olnud viimase 20 aasta kõrgeim ja 2017. aasta näitaja põhjal kuulub Eesti pigem Euroopa Liidu madalama tööpuudusega riikide hulka. Arvestada tuleb ka sellega, et tuleviku töökohad ja automatiseerimine vähendavad nõudlust lihttööde järele. Eestis on kõrge automatiseerimise tõenäosusega ametite osakaal ca 12%. Teisalt on see aga võimalus uute rollide ja töökohtade tekkeks - edukas digitaliseerimine võimaldaks Eestis luua ligi 30 000 uut töökohta.
+
+{:.centered}
+[Faktileht](/tööhõive.pdf){:.blue-button}
 </center></section>
 
 <section class="white-section text-section"><center>

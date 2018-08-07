@@ -160,6 +160,7 @@ center {
 	line-height: $text-line-height;
 
 	& + p { margin-top: 1.6 * 1.6rem; }
+	&.centered { text-align: center; }
 }
 
 .paragraph a,
