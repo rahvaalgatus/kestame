@@ -1,5 +1,5 @@
 !!!
-%html(lang="et")
+%html{lang: @item[:lang] || "et"}
 	%head
 		%meta(charset="utf-8")
 		%title= @item[:title] + (@item[:page] != "home" ? " - #kuidasmekestame" : "")
