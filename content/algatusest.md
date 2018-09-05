@@ -19,7 +19,8 @@ Arutelude formaat sisaldab rahvastikutrendidega seotud info ja faktide avamist, 
 
 ## Algatajad
 
-Kodanikualgatuslike arutelude sari tehakse teoks koostöös Avatud Eesti Fondi, Eesti Tööandjate Keskliidu, Mainor AS, Eesti Kaubandus-Tööstuskoja, EAS Work in Estonia programmi, Tallinna Tehnikaülikooli, Teenusmajanduse Koja, Vabaühenduste Liidu, Eesti Koostöö Kogu, IOM, Siseministeeriumi ja Kultuuriministeeriumiga. Projekti kaasrahastavad Euroopa Liit Varjupaiga- , Rände- ja Integratsioonifondi kaudu ning Siseministeerium.
+Kodanikualgatuslike arutelude sari tehakse teoks koostöös Avatud Eesti Fondi, Eesti Tööandjate Keskliidu, Mainor AS, Eesti Kaubandus-Tööstuskoja, EAS Work in Estonia programmi, Tallinna Tehnikaülikooli, Teenusmajanduse Koja, Vabaühenduste Liidu, Eesti Koostöö Kogu, IOM, Siseministeeriumi ja Kultuuriministeeriumiga. Projekti “Teadlikkuse suurendamine Eesti inimvara seisust ja ühisloome võimalikest lahendustest” kaasrahastavad Euroopa Liit Varjupaiga- , Rände- ja Integratsioonifondi kaudu ning Siseministeerium.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzk5NjQ5MzYsMzgyNjAzMzk2XX0=
+eyJoaXN0b3J5IjpbLTE0MjA5OTEwNDgsNzk5NjQ5MzYsMzgyNj
+AzMzk2XX0=
 -->
