@@ -17,9 +17,8 @@ autocompile:
 server:
 	@$(NANOC) view --port $(PORT) --live-reload
 
-# Missing --live-reload: https://github.com/guard/guard-nanoc/issues/38.
 autoserver:
-	@$(NANOC) live --port $(PORT)
+	@$(NANOC) live --port $(PORT) --live-reload
 
 deploy: ENV = production
 deploy: compile
