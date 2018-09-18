@@ -8,8 +8,6 @@ page: home
 
 %section#welcome.white-section
 	%center
-		%img(src="/assets/counties.png" alt="Eesti maakonnad")
-
 		%p.paragraph
 			<strong>Teadlased ennustavad Eestile lähemateks kümnenditeks rahvaarvu
 			jätkuvat ja olulist kahanemist.</strong> Kahanev rahvaarv kujutab tõsist
@@ -24,6 +22,17 @@ page: home
 		%menu
 			%a.blue-button(href="/algatusest/") Loe rohkem
 			%a.green-button(href="/сохранимся/") Подробнее
+
+%section.white-section
+	%center
+		%h2.subheading Arutelude kaart
+
+		%p.paragraph
+			NB! Kui soovid osaleda arutelul, palun kirjuta konkreetse arutelu
+			korraldajale. Sa näed tema andmeid, kui vajutad kaardil ikoonile.
+
+	- discussions = read_discussions(@items["/discussions.csv"])
+	= render "/_map.haml", discussions: discussions
 
 %section#join.grey-section
 	%center

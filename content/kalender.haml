@@ -1,0 +1,15 @@
+---
+title: Arutelude kalender
+page: calendar
+---
+= @items["/kalender.md"].compiled_content(snapshot: :last)
+
+- discussions = read_discussions(@items["/discussions.csv"])
+%section= render "/_map.haml", discussions: discussions
+
+%section#discussions.white-section.text-section
+	%center
+		%h2.subheading Arutelude nimekiri
+
+		- discussions.each do |discussion|
+			= render "/_discussion.haml", discussion: discussion

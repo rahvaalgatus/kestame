@@ -24,6 +24,9 @@ deploy: ENV = production
 deploy: compile
 	@$(NANOC) deploy -t default
 
+content/discussions.csv:
+	wget "https://docs.google.com/spreadsheets/d/e/2PACX-1vTRk6FqIE82qy3Fb7luvJsBVhqV1USNFCc-Zc7MGlxiRe1kLWKeXT5li-iywqa22A2eAbpijj7yFCv1/pub?gid=690582168&single=true&output=csv" -O "$@"
+
 .PHONY: love
 .PHONY: compile autocompile
 .PHONY: server autoserver

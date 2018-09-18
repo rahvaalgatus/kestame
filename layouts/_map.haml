@@ -1,0 +1,61 @@
+#discussions-map
+	%script(src="https://api.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.js")
+	%link(rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.css")
+
+	:javascript
+		mapboxgl.accessToken = "#{@config[:mapbox_token]}"
+
+		var map = new mapboxgl.Map({
+			container: "discussions-map",
+			style: "mapbox://styles/mapbox/light-v9",
+			center: [25.1, 58.67],
+			zoom: 6.3
+		})
+
+		map.on("load", function() {
+			map.loadImage("/assets/icons8-marker-100.png", function(err, img) {
+				if (err) throw err
+				map.addImage("custom-marker", img)
+			})
+
+			map.addLayer({
+				id: "discussions",
+				type: "symbol",
+
+				source: {
+					type: "geojson",
+					data: #{serialize_geojson(@discussions)}
+				},
+
+				layout: {
+					"icon-image": "custom-marker",
+					"icon-size": 0.5,
+					"icon-allow-overlap": true,
+					"icon-anchor": "bottom"
+				}
+			})
+		})
+
+		map.on("click", function(ev) {
+			var feature = map.queryRenderedFeatures(ev.point, {
+				layers: ["discussions"]
+			})[0]
+
+			if (feature == null) return
+
+			var el = new mapboxgl.Popup({offset: 10, anchor: "left"})
+
+			var id = feature.properties.id
+			var content = document.getElementById("map-discussion-" + id)
+			content = content.cloneNode(true)
+			content.id = null
+			el.setDOMContent(content)
+
+			el.setLngLat(feature.geometry.coordinates)
+			el.addTo(map)
+		})
+
+	.discussions(style="display: none")
+		- discussions.each do |discussion|
+			- id = "map-discussion-#{discussion["id"]}"
+			= render "/_discussion.haml", discussion: discussion, id: id

@@ -6,8 +6,10 @@ $text-size: 1.6rem;
 $text-line-height: 1.6;
 $tablet-width: 865px;
 $mobile-width: 569px;
+$text-section-width: 80rem;
 
 // https://brand.estonia.ee/et/disain/varvid/
+$body-font: Aino, sans-serif;
 $headline-font: Aino Headline, Aino, sans-serif;
 $blue: #0000F0;
 $link-blue: #0078ff;
@@ -68,7 +70,7 @@ body {
 body {
 	background-color: white;
 	color: $dark-grey;
-	font-family: Aino, sans-serif;
+	font-family: $body-font;
 	display: flex;
 	flex-direction: column;
 
@@ -79,8 +81,9 @@ body {
 
 strong { font-weight: bold; }
 
-section {
-	padding: 6rem 0;
+section center {
+	padding-top: 6rem;
+	padding-bottom: 6rem;
 
 	@include mobile {
 		padding-top: 4rem;
@@ -104,6 +107,10 @@ center {
 	& > * { margin-right: auto }
 }
 
+.white-section {
+	& + .white-section center { padding-top: 0; }
+}
+
 .grey-section { background-color: $light-grey; }
 
 .text-section {
@@ -112,7 +119,7 @@ center {
 	hyphens: manual;
 
 	center {
-		max-width: 80rem;
+		max-width: $text-section-width;
 	}
 
 	* + h2 { margin-top: 4rem; }
@@ -257,7 +264,7 @@ center {
 		font-family: $headline-font;
 	}
 
-	&.text-header center { max-width: 80rem; }
+	&.text-header center { max-width: $text-section-width; }
 
 	@include mobile {
 		padding: 0 0 3rem;
@@ -271,19 +278,9 @@ center {
 
 #home-page {
 	#welcome {
-		img {
-			float: right;
-			margin-left: 2rem;
-			margin-bottom: 2rem;
-			max-width: 50%;
-		}
-
-		p {
-			max-width: 50%;
-		}
-
 		menu {
 			margin-top: 4rem;
+			text-align: center;
 			a { margin-right: 4rem; }
 		}
 
@@ -343,7 +340,7 @@ center {
 	}
 
 	#counter {
-		padding-bottom: 10rem;
+		center { padding-bottom: 10rem; }
 
 		ul {
 			text-align: center;
@@ -365,6 +362,60 @@ center {
 			}
 		}
 	}
+}
+
+#organizer-page {
+	.form-section {
+		center {
+			max-width: $text-section-width;
+			@include mobile { padding-left: 0; padding-right: 0; }
+		}
+
+		iframe {
+			display: inline-block;
+			width: 100%;
+		}
+	}
+}
+
+#home-page #discussions-map,
+#calendar-page #discussions-map {
+	width: 100%;
+	height: 50rem;
+
+	.mapboxgl-popup {
+		max-width: 20rem;
+		font-family: $body-font;
+
+		h4 {
+			font-weight: bold;
+			color: $blue;
+			line-height: 1.5;
+		}
+
+		.paragraph {
+			font-size: 1.3rem;
+			line-height: 1.3;
+		}
+	}
+}
+
+#discussions-map .discussion,
+#calendar-page .discussion {
+	dl dt,
+	dl dd {
+		display: inline;
+	}
+
+	dl dt { font-weight: bold; }
+	dl dt:after { content: ": "; }
+
+	dl dd:after {
+		content: "";
+		display: block;
+	}
+
+	& + .discussion { margin-top: 2rem; }
 }
 
 #footer {

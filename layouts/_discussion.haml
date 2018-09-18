@@ -1,0 +1,18 @@
+.discussion.paragraph(id=@id)
+	%h4= @discussion["title"]
+
+	%dl
+		%dt Toimub
+		%dd #{@discussion["at"].strftime("%-d.%-m.%Y kl %-H:%M")}
+
+		%dt Asukoht
+		%dd= @discussion["address"]
+
+		%dt Korraldaja
+		%dd
+			- organizer_name = @discussion["organizer_name"]
+			- organizer_email = @discussion["organizer_email"]
+			- organizer_phone = @discussion["organizer_phone"]
+			#{organizer_name},&#32;
+			<a href="mailto:#{organizer_email}">#{organizer_email}</a>,&#32;
+			<a href="tel:#{organizer_phone}">#{organizer_phone}</a>
