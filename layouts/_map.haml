@@ -12,6 +12,8 @@
 			zoom: 6.3
 		})
 
+		map.addControl(new mapboxgl.NavigationControl())
+
 		map.on("load", function() {
 			map.loadImage("/assets/icons8-marker-100.png", function(err, img) {
 				if (err) throw err
