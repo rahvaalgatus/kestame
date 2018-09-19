@@ -23,17 +23,6 @@ page: home
 			%a.blue-button(href="/algatusest/") Loe rohkem
 			%a.green-button(href="/сохранимся/") Подробнее
 
-%section.white-section
-	%center
-		%h2.subheading Arutelude kaart
-
-		%p.paragraph
-			NB! Kui soovid osaleda arutelul, palun kirjuta konkreetse arutelu
-			korraldajale. Sa näed tema andmeid, kui vajutad kaardil ikoonile.
-
-	- discussions = read_discussions(@items["/discussions.csv"])
-	= render "/_map.haml", discussions: discussions
-
 %section#join.grey-section
 	%center
 		%h2.subheading Algatuses saab igaüks osaleda
@@ -65,6 +54,18 @@ page: home
 					häid mõtteid, on novembrikuu viimasel nädalal võimalik teha 
 					ettepanekuid ka avalikul veebiplatvormil. 
 				%a.blue-button(href="/ideekorje/") Kirjutan
+
+%section.white-section
+	%center
+		%h2.subheading Arutelude kaart
+
+		%p.paragraph
+			NB! Kui soovid osaleda arutelul, palun kirjuta konkreetse arutelu
+			korraldajale. Sa näed tema andmeid, kui vajutad kaardil ikoonile.
+
+%section#map
+	- discussions = read_discussions(@items["/discussions.csv"])
+	%center= render "/_map.haml", discussions: discussions
 
 %section#counter.white-section
 	%center

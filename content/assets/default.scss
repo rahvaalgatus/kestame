@@ -378,6 +378,21 @@ center {
 	}
 }
 
+#home-page #map,
+#calendar-page #map {
+	background-color: #f2f2f0;
+
+	background-image: linear-gradient(
+		to right,
+		#cad2d3 0,
+		#cad2d3 50%,
+		#f2f2f0 50%,
+		#f2f2f0 100%
+	);
+
+	center { padding-top: 0; padding-bottom: 0; }
+}
+
 #home-page #discussions-map,
 #calendar-page #discussions-map {
 	width: 100%;
