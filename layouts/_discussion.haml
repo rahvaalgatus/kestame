@@ -2,8 +2,9 @@
 	%h4= @discussion["title"]
 
 	%dl
-		%dt Toimub
-		%dd #{@discussion["at"].strftime("%-d.%-m.%Y kl %-H:%M")}
+		- time = @discussion["at"]
+		%dt= time < Time.now ? "Toimus" : "Toimub"
+		%dd #{time.strftime("%-d.%-m.%Y kl %-H:%M")}
 
 		%dt Asukoht
 		%dd= @discussion["address"]

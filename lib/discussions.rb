@@ -7,7 +7,7 @@ def read_discussions(item)
 	csv.each_with_index do |discussion, i|
 		discussion["id"] = i
 		datetime = discussion["date"] + " " + discussion["time"]
-		discussion["at"] = Time.strptime(datetime, "%m/%d/%Y %r")
+		discussion["at"] = Time.strptime(datetime, "%Y-%m-%d %r")
 	end
 end
 

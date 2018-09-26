@@ -12,5 +12,13 @@ page: calendar
 	%center
 		%h2.subheading Arutelude nimekiri
 
-		- discussions.each do |discussion|
-			= render "/_discussion.haml", discussion: discussion
+		- discussions = discussions.group_by {|d| d["state"]}
+		- states = discussions.keys.sort {|a, b| a == "Harjumaa" ? -1 : a <=> b}
+		- states.each do |state|
+			%h3= state
+			- future = discussions[state].select {|d| d["at"] >= Time.now }
+			- future = future.sort_by {|d| d["at"] }
+			- past = discussions[state].select {|d| d["at"] < Time.now }
+			- past = past.sort_by {|d| d["at"] }.reverse
+			- (future + past).each do |discussion|
+				= render "/_discussion.haml", discussion: discussion
