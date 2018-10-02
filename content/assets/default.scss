@@ -403,7 +403,6 @@ center {
 
 		h4 {
 			font-weight: bold;
-			color: $blue;
 			line-height: 1.5;
 		}
 
@@ -416,6 +415,9 @@ center {
 
 #discussions-map .discussion,
 #calendar-page .discussion {
+	h4 { color: $blue; }
+	&.past h4 { color: $dark-grey; }
+
 	dl dt,
 	dl dd {
 		display: inline;
@@ -433,7 +435,6 @@ center {
 #calendar-page {
 	#discussions {
 		h3 { margin-bottom: 2rem; }
-		h4 { color: $dark-grey; }
 
 		.discussion + .discussion { margin-top: $text-size * $text-line-height; }
 	}

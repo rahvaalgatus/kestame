@@ -1,6 +1,8 @@
 #discussions-map
 	%script(src="https://api.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.js")
 	%link(rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.css")
+	- future_discussions = @discussions.select {|d| d["at"] >= Time.now }
+	- past_discussions = @discussions.select {|d| d["at"] < Time.now }
 
 	:javascript
 		mapboxgl.accessToken = "#{@config[:mapbox_token]}"
@@ -15,22 +17,44 @@
 		map.addControl(new mapboxgl.NavigationControl())
 
 		map.on("load", function() {
-			map.loadImage("/assets/icons8-marker-100.png", function(err, img) {
+			map.loadImage("/assets/icons8-marker-future.png", function(err, img) {
 				if (err) throw err
-				map.addImage("custom-marker", img)
+				map.addImage("future-discussion", img)
+			})
+
+			map.loadImage("/assets/icons8-marker-past.png", function(err, img) {
+				if (err) throw err
+				map.addImage("past-discussion", img)
 			})
 
 			map.addLayer({
-				id: "discussions",
+				id: "future-discussions",
 				type: "symbol",
 
 				source: {
 					type: "geojson",
-					data: #{serialize_geojson(@discussions)}
+					data: #{serialize_geojson(future_discussions)}
 				},
 
 				layout: {
-					"icon-image": "custom-marker",
+					"icon-image": "future-discussion",
+					"icon-size": 0.5,
+					"icon-allow-overlap": true,
+					"icon-anchor": "bottom"
+				}
+			})
+
+			map.addLayer({
+				id: "past-discussions",
+				type: "symbol",
+
+				source: {
+					type: "geojson",
+					data: #{serialize_geojson(past_discussions)}
+				},
+
+				layout: {
+					"icon-image": "past-discussion",
 					"icon-size": 0.5,
 					"icon-allow-overlap": true,
 					"icon-anchor": "bottom"
@@ -40,7 +64,7 @@
 
 		map.on("click", function(ev) {
 			var feature = map.queryRenderedFeatures(ev.point, {
-				layers: ["discussions"]
+				layers: ["future-discussions", "past-discussions"]
 			})[0]
 
 			if (feature == null) return
