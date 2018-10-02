@@ -1,4 +1,4 @@
-created_at,date,time,address,state,language,title,organizer_name,organizer_phone,organizer_email,coordinates
-9/17/2018 16:26:48,2018-08-11,1:00:00 PM,Paide Vallimägi,Järvamaa,Eesti keeles,"Arvamusfestivali arutelu ""Kuidas me kestame?""",Maris Jõgeva,53421726,maris@rahvaalgatus.ee,"25.5723328,58.8894542"
-,2018-08-16,9:00:00 AM,Anija mõis,Harjumaa,Eesti keeles,Anija sädeinimesed,Maris Jõgeva,53421726,maris@rahvaalgatus.ee,"25.3006816,59.3816447"
-,2018-09-20,1:30:00 PM,Põhjaka mõis,Järvamaa,Eesti keeles,#kuidasmekestame arutelujuhid,Maris Jõgeva,53421726,maris@rahvaalgatus.ee,"25.672551,58.89551900000001"
+date,time,address,state,language,title,organizer_name,organizer_phone,organizer_email,coordinates
+2018-08-11,1:00:00 PM,Paide Vallimägi,Järvamaa,Eesti keeles,"Arvamusfestivali arutelu ""Kuidas me kestame?""",Maris Jõgeva,53421726,maris@rahvaalgatus.ee,"25.5723328,58.8894542"
+2018-08-16,9:00:00 AM,Anija mõis,Harjumaa,Eesti keeles,Anija sädeinimesed,Maris Jõgeva,53421726,maris@rahvaalgatus.ee,"25.3006816,59.3816447"
+2018-09-20,1:30:00 PM,Põhjaka mõis,Järvamaa,Eesti keeles,#kuidasmekestame arutelujuhid,Maris Jõgeva,53421726,maris@rahvaalgatus.ee,"25.672551,58.89551900000001"
