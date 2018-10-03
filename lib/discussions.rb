@@ -21,7 +21,7 @@ def serialize_geojson(discussions)
 
 				"geometry": {
 					type: "Point",
-					coordinates: discussion["coordinates"].split(",").map(&:to_f)
+					coordinates: discussion["coordinates"].split(";").map(&:to_f)
 				},
 
 				"properties": {id: discussion["id"]}
