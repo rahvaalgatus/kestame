@@ -2,6 +2,8 @@
 title: "Kogukondlikud arutelud #kuidasmekestame"
 page: home
 ---
+- discussions = read_discussions(@items["/discussions.csv"])
+
 %header#header
 	%center
 		%h1= item[:title]
@@ -65,12 +67,12 @@ page: home
 			Kaarti saad suurendada (+), mis toob nähtavale rohkem arutelusid.
 
 %section#map
-	- discussions = read_discussions(@items["/discussions.csv"])
 	%center= render "/_map.haml", discussions: discussions
 
 %section#counter.white-section
 	%center
 		%h2.subheading Hetkeks on...
 		%ul
-			%li <em>05</em> arutelu korraldatud
+			- past = discussions.count {|d| d["at"] < Time.now }
+			%li <em>#{format("%02d", past)}</em> arutelu korraldatud
 			%li <em>71</em> inimest osalenud aruteludes
