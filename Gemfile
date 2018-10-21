@@ -1,5 +1,5 @@
 source "https://rubygems.org"
-gem "nanoc", "~> 4.9"
+gem "nanoc", "~> 4.10"
 gem "adsf"
 gem "adsf-live"
 gem "haml"
