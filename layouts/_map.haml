@@ -28,23 +28,6 @@
 			})
 
 			map.addLayer({
-				id: "future-discussions",
-				type: "symbol",
-
-				source: {
-					type: "geojson",
-					data: #{serialize_geojson(future_discussions)}
-				},
-
-				layout: {
-					"icon-image": "future-discussion",
-					"icon-size": 0.5,
-					"icon-allow-overlap": true,
-					"icon-anchor": "bottom"
-				}
-			})
-
-			map.addLayer({
 				id: "past-discussions",
 				type: "symbol",
 
@@ -55,6 +38,23 @@
 
 				layout: {
 					"icon-image": "past-discussion",
+					"icon-size": 0.5,
+					"icon-allow-overlap": true,
+					"icon-anchor": "bottom"
+				}
+			})
+
+			map.addLayer({
+				id: "future-discussions",
+				type: "symbol",
+
+				source: {
+					type: "geojson",
+					data: #{serialize_geojson(future_discussions)}
+				},
+
+				layout: {
+					"icon-image": "future-discussion",
 					"icon-size": 0.5,
 					"icon-allow-overlap": true,
 					"icon-anchor": "bottom"
