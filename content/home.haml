@@ -73,6 +73,7 @@ page: home
 	%center
 		%h2.subheading Hetkeks on...
 		%ul
-			- past = discussions.count {|d| d["at"] < Time.now }
-			%li <em>#{format("%02d", past)}</em> arutelu korraldatud
-			%li <em>71</em> inimest osalenud aruteludes
+			- past = discussions.select {|d| d["at"] < Time.now }
+			- past_people = past.map {|d| d["people_count"].to_i }.sum
+			%li <em>#{format("%02d", past.size)}</em> arutelu korraldatud
+			%li <em>#{format("%02d", past_people)}</em> inimest osalenud aruteludes
