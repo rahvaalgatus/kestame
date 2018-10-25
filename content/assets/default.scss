@@ -26,6 +26,10 @@ $light-grey: #f0f1f2;
   @media only screen and (max-width: $mobile-width) { @content }
 }
 
+@mixin tablet-and-mobile {
+  @media only screen and (max-width: $tablet-width) { @content }
+}
+
 @font-face {
   font-family: "Aino";
   font-weight: normal;
@@ -291,6 +295,30 @@ center {
 			img { float: none; max-width: 100%; margin-bottom: 2rem; }
 			p { max-width: none; }
 			menu a { margin-top: 1rem; margin-right: 1rem; }
+		}
+	}
+
+	#wordclouds {
+		.hopes-and-fears {
+			margin-top: 4rem;
+			text-align: center;
+		}
+
+		li {
+			display: inline-block;
+			max-width: 50%;
+			vertical-align: top;
+			padding: 0 1rem;
+		}
+
+		img {
+			margin-top: 2rem;
+			max-width: 100%;
+		}
+
+		@include tablet-and-mobile {
+			li { max-width: 50rem; display: block; margin: 0 auto; padding: 0; }
+			li + li { margin-top: 3rem; }
 		}
 	}
 
