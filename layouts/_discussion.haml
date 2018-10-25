@@ -6,7 +6,13 @@
 
 	%dl
 		%dt= future ? "Toimub" : "Toimus"
-		%dd #{time.strftime("%-d.%-m.%Y kl %-H:%M")}
+		%dd
+			- till = time + 3600 * @discussion["duration"]
+			%time{datetime: time.strftime("%FT%T%:z")}
+				= time.strftime("%-d.%-m.%Y kl %-H:%M")
+
+			- if time != till
+				–#{till.strftime("%-H:%M")}
 
 		%dt Asukoht
 		%dd= @discussion["address"]

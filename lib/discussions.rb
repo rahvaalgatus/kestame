@@ -8,6 +8,7 @@ def read_discussions(item)
 		discussion["id"] = i
 		datetime = discussion["date"] + " " + discussion["time"]
 		discussion["at"] = Time.strptime(datetime, "%Y-%m-%d %r")
+		discussion["duration"] = discussion["duration"].to_f
 	end
 end
 
