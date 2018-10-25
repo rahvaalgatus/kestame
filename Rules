@@ -43,4 +43,8 @@ compile "/**/*" do
 	write item.identifier.to_s
 end
 
+compile "/.htaccess" do
+	write item.identifier.to_s
+end
+
 layout "/**/*", :haml, remove_whitespace: true
