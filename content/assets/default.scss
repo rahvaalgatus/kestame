@@ -433,6 +433,12 @@ center {
 }
 
 #calendar-page {
+	#video {
+		background-color: $blue;
+		center { padding: 0; max-width: $text-section-width; }
+		iframe { width: 100%; height: 38rem; display: block; }
+	}
+
 	#discussions {
 		h3 { margin-bottom: 2rem; }
 

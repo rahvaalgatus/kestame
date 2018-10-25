@@ -23,6 +23,7 @@ end
 
 compile "/kalender.md" do
   filter :kramdown, parse_block_html: true, parse_span_html: true
+	snapshot :text
 	layout "/text.*"
 end
 
