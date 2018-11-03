@@ -1,17 +1,20 @@
 date,time,duration,address,state,language,title,organizer_name,organizer_phone,organizer_email,people_count,coordinates
-2018-08-11,1:00:00 PM,0.0,Paide Vallimägi,Järvamaa,Eesti keeles,"Arvamusfestivali arutelu ""Kuidas me kestame?""",Maris Jõgeva,53421726,maris@rahvaalgatus.ee,78,25.5723328;58.8894542
-2018-08-16,9:00:00 AM,0.0,Anija mõis,Harjumaa,Eesti keeles,Anija sädeinimesed,Maris Jõgeva,53421726,maris@rahvaalgatus.ee,0,25.3006816;59.3816447
-2018-09-20,1:30:00 PM,0.0,Põhjaka mõis,Järvamaa,Eesti keeles,#kuidasmekestame arutelujuhid,Maris Jõgeva,53421726,maris@rahvaalgatus.ee,80,25.672551;58.89551900000001
-2018-10-15,4:00:00 PM,0.0,"Kuressare vabakontor ""EDUkontor""",Saaremaa,Eesti keeles,Saaremaa sädeinimeste arutelu-läbimäng I,Maris Rebel,56986981,maris.rebel@gmail.com,0,22.4848423;58.25310009999999
-2018-10-28,2:00:00 PM,0.0,"Kuressaare vabakontor ""EDUkontor""",Saaremaa,Eesti keeles,Saaremaa sädeinimeste arutelu-läbimäng II,Maris Rebel,56986981,maris.rebel@gmail.com,0,22.4848423;58.25310009999999
-2018-10-22,5:00:00 PM,0.0,"Tartu, Raekoja plats 1 (Ülikooli 7), 2.korrus",Tartumaa,Eesti keeles,Tartumaa sädeinimeste arutelu-läbimäng ,Kaisa Jõgeva,58369606,kaisa.jogeva@gmail.com,0,26.7221209;58.37973949999999
-2018-10-15,3:00:00 PM,0.0,"Pärnu, Akadeemia 2, V korrus",Pärnumaa,Eesti keeles,Pärnumaa sädeinimeste arutelu-läbimäng,Daisi Sprenk,53455161,daisi@parnumaa.ee,0,24.4963212;58.3836144
-2018-10-23,3:00:00 PM,0.0,"Sangaste kultuurimaja peeglisaal, Otepää vald",Valgamaa,Eesti keeles,Valgamaa sädeinimeste arutelu-läbimäng,Ivika Nõgel,5115914,partnerlus@partnerlus.ee,0,26.326093;57.9247672
-2018-10-29,4:00:00 PM,0.0,"Tsenter kompetentsikeskus, Pärna tee 1, Väimela, Võru vald",Võrumaa,Eesti keeles,Võrumaa sädeinimeste arutelu-läbimäng,Piret Jeedas,+3725292242,piret@ruumiloojad.ee,0,27.0158151;57.89427
-2018-10-24,1:00:00 PM,0.0,"Järva vald, Karinu külamaja",Järvamaa,Eesti keeles,Järvamaa sädeinimeste arutelu-läbimäng,Arto Saar,5257373,saar.arto@gmail.com,0,25.9566493;59.0419595
-2018-11-06,5:30:00 PM,0.0,"Keila, Keskväljak 13A, Noortetuba Mõte Kuubis",Harjumaa,Eesti keeles,Keila mõtleb kaasa,Andrus Saliste,5068602,asaliste@hotmail.com,0,24.416316;59.312992
-2018-10-23,5:30:00 PM,0.0,"Muraste, Lee tee 5, Muraste koolimaja",Harjumaa,Eesti keeles,Harku vald mõtleb kaasa,Andrus Saliste,5068602,asaliste@hotmail.com,0,24.4413829;59.4571158
-2018-10-30,2:00:00 PM,0.0,Kuremaa loss,Jõgevamaa,Eesti keeles,Jõgevamaa sädeinimeste arutelu-läbimäng,Piret Jeedas,5292242,piret@ruumiloojad.ee,0,26.535429;58.73712
-2018-10-30,2:00:00 PM,0.0,"Haapsalu Kultuurikeskus, Randlase saal",Läänemaa,Eesti keeles,Läänemaa sädeinimeste arutelu-läbimäng,Maris Jõgeva,53421726,maris@rahvaalgatus.ee,0,23.539531;58.9450603
-2018-11-22,4:00:00 PM,,"Põhja-Pärnumaa, Libatse küla, Libatse Lasteaed-algkool",Pärnumaa,Eesti keeles,Libatse külaselts,Heleri Wazza,58519434,libatse.kylaselts@gmail.com,,24.4825252;58.6588594
-2018-11-22,5:30:00 PM,,"Ervita Seltsimaja, Järva vald ",Järvamaa,Eesti keeles,Koeru kandi kogukonnad,Kirsika Ilmjärv,55577004,Kirsika@koeru.edu.ee,,26.0661225;58.93199600000001
+2018-08-11,1:00:00 PM,4.0,Paide Vallimägi,Järvamaa,Eesti keeles,"Arvamusfestivali arutelu ""Kuidas me kestame?""",Maris Jõgeva,53421726,maris@rahvaalgatus.ee,78,25.5723328;58.8894542
+2018-08-16,9:00:00 AM,4.0,Anija mõis,Harjumaa,Eesti keeles,Anija sädeinimesed,Maris Jõgeva,53421726,maris@rahvaalgatus.ee,0,25.3006816;59.3816447
+2018-09-20,1:30:00 PM,6.0,Põhjaka mõis,Järvamaa,Eesti keeles,#kuidasmekestame arutelujuhid,Maris Jõgeva,53421726,maris@rahvaalgatus.ee,80,25.672551;58.89551900000001
+2018-10-15,4:00:00 PM,4.0,"Kuressare vabakontor ""EDUkontor""",Saaremaa,Eesti keeles,Saaremaa sädeinimeste arutelu-läbimäng I,Maris Rebel,56986981,maris.rebel@gmail.com,0,22.4848423;58.25310009999999
+2018-10-28,2:00:00 PM,4.0,"Kuressaare vabakontor ""EDUkontor""",Saaremaa,Eesti keeles,Saaremaa sädeinimeste arutelu-läbimäng II,Maris Rebel,56986981,maris.rebel@gmail.com,0,22.4848423;58.25310009999999
+2018-10-22,5:00:00 PM,4.0,"Tartu, Raekoja plats 1 (Ülikooli 7), 2.korrus",Tartumaa,Eesti keeles,Tartumaa sädeinimeste arutelu-läbimäng ,Kaisa Jõgeva,58369606,kaisa.jogeva@gmail.com,0,26.7221209;58.37973949999999
+2018-10-15,3:00:00 PM,4.0,"Pärnu, Akadeemia 2, V korrus",Pärnumaa,Eesti keeles,Pärnumaa sädeinimeste arutelu-läbimäng,Daisi Sprenk,53455161,daisi@parnumaa.ee,0,24.4963212;58.3836144
+2018-10-23,3:00:00 PM,3.5,"Sangaste kultuurimaja peeglisaal, Otepää vald",Valgamaa,Eesti keeles,Valgamaa sädeinimeste arutelu-läbimäng,Ivika Nõgel,5115914,partnerlus@partnerlus.ee,0,26.326093;57.9247672
+2018-10-29,4:00:00 PM,4.0,"Tsenter kompetentsikeskus, Pärna tee 1, Väimela, Võru vald",Võrumaa,Eesti keeles,Võrumaa sädeinimeste arutelu-läbimäng,Piret Jeedas,+3725292242,piret@ruumiloojad.ee,0,27.0158151;57.89427
+2018-10-24,1:00:00 PM,3.5,"Järva vald, Karinu külamaja",Järvamaa,Eesti keeles,Järvamaa sädeinimeste arutelu-läbimäng,Arto Saar,5257373,saar.arto@gmail.com,0,25.9566493;59.0419595
+2018-11-06,5:30:00 PM,3.5,"Keila, Keskväljak 13A, Noortetuba Mõte Kuubis",Harjumaa,Eesti keeles,Keila mõtleb kaasa,Andrus Saliste,5068602,asaliste@hotmail.com,0,24.416316;59.312992
+2018-10-23,5:30:00 PM,3.5,"Muraste, Lee tee 5, Muraste koolimaja",Harjumaa,Eesti keeles,Harku vald mõtleb kaasa,Andrus Saliste,5068602,asaliste@hotmail.com,0,24.4413829;59.4571158
+2018-10-30,2:00:00 PM,4.0,Kuremaa loss,Jõgevamaa,Eesti keeles,Jõgevamaa sädeinimeste arutelu-läbimäng,Piret Jeedas,5292242,piret@ruumiloojad.ee,0,26.535429;58.73712
+2018-10-30,2:00:00 PM,3.5,"Haapsalu Kultuurikeskus, Randlase saal",Läänemaa,Eesti keeles,Läänemaa sädeinimeste arutelu-läbimäng,Maris Jõgeva,53421726,maris@rahvaalgatus.ee,0,23.539531;58.9450603
+2018-11-22,4:00:00 PM,3.5,"Põhja-Pärnumaa, Libatse küla, Libatse Lasteaed-algkool",Pärnumaa,Eesti keeles,Libatse külaselts,Heleri Wazza,58519434,libatse.kylaselts@gmail.com,0,24.4825252;58.6588594
+2018-11-22,5:30:00 PM,3.5,"Ervita Seltsimaja, Järva vald ",Järvamaa,Eesti keeles,Koeru kandi kogukonnad,Kirsika Ilmjärv,55577004,Kirsika@koeru.edu.ee,0,26.0661225;58.93199600000001
+2018-11-13,4:00:00 PM,3.5,"Wimka kultuuriklubi, Turu 7 ",Viljandimaa,Eesti keeles,Viljandimaa sädeinimeste läbimäng,Monica Sasi,53013201,monica.sasi8@gmail.com,0,25.5939355;58.36577519999999
+2018-11-12,5:00:00 PM,4,"Tallinn, Telliskivi loomelinnak",Harjumaa,Eesti keeles,Tallinna asumiseltsid,Peeter Vihma,53883291,peetervihma@gmail.com,0,24.7289279;59.439829
+2018-11-15,4:30:00 PM,3.5,"Rapla, Loomebaas",Raplamaa,Eesti keeles,Raplamaa sädeinimeste arutelu-läbimäng,Maris Jõgeva,53421726,maris@rahvaalgatus.ee,0,24.7957424;59.0089924
