@@ -1,8 +1,8 @@
 #discussions-map
 	%script(src="https://api.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.js")
 	%link(rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.css")
-	- future_discussions = @discussions.select {|d| d["at"] >= Time.now }
-	- past_discussions = @discussions.select {|d| d["at"] < Time.now }
+	- future_discussions = @discussions.select(&:future?)
+	- past_discussions = @discussions.select(&:past?)
 
 	:javascript
 		mapboxgl.accessToken = "#{@config[:mapbox_token]}"

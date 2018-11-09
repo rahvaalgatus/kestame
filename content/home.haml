@@ -25,23 +25,6 @@ page: home
 			%a.blue-button(href="/algatusest/") Loe rohkem
 			%a.green-button(href="/сохранимся/") Подробнее
 
-%section#wordclouds.grey-section
-	%center
-		%h2.subheading Hirmud ja lootused
-		%p.paragraph
-			Mõeldes prognoosidele, mille järgi tänaste trendide jätkudes langeb
-			rahvastiku arv juba selle sajandi lõpuks alla 800 000 inimese,
-			jagasid #kuidasmekestame aruteludel osalejad järgmiseid lootusi ja
-			hirme.
-
-		%ul.hopes-and-fears
-			%li
-				%h3.subsubheading Mida me kardame?
-				%img.fears(src="/assets/hirmud.png" alt="Hirmude sõnapilv")
-			%li
-				%h3.subsubheading Mida me loodame?
-				%img.hopes(src="/assets/lootused.png" alt="Lootuste sõnapilv")
-
 %section#join.white-section
 	%center
 		%h2.subheading Algatuses saab igaüks osaleda
@@ -90,7 +73,7 @@ page: home
 	%center
 		%h2.subheading Hetkeks on...
 		%ul
-			- past = discussions.select {|d| d["at"] < Time.now }
-			- past_people = past.map {|d| d["people_count"].to_i }.sum
+			- past = discussions.select(&:past?)
+			- past_people = past.map(&:people_count).sum
 			%li <em>#{format("%02d", past.size)}</em> arutelu korraldatud
 			%li <em>#{format("%02d", past_people)}</em> inimest osalenud aruteludes

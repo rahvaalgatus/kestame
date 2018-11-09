@@ -7,7 +7,12 @@ preprocess do
   @config[:env] = ENV["ENV"] if ENV["ENV"]
 end
 
+filter_with_kramdown = proc do |item|
+	item.filter :kramdown, parse_block_html: true
+end
+
 ignore "/**/_*"
+ignore "/*.csv"
 
 compile "/home.haml" do
 	filter :haml, remove_whitespace: true
@@ -21,14 +26,13 @@ compile "/**/*.haml" do
 	write item.identifier.without_ext + "/index.html"
 end
 
-compile "/kalender.md" do
-  filter :kramdown, parse_block_html: true, parse_span_html: true
+compile "/{kalender,ideekorje}.md" do
+	filter_with_kramdown[self]
 	snapshot :text
-	layout "/text.*"
 end
 
 compile "/**/*.md" do
-  filter :kramdown, parse_block_html: true, parse_span_html: true
+	filter_with_kramdown[self]
 	layout "/text.*"
 	layout "/default.*"
 	write item.identifier.without_ext + "/index.html"

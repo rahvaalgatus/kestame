@@ -1,0 +1,109 @@
+---
+title: Tulemused
+page: results
+---
+- problems = read_problems(@items["/problems.csv"])
+
+%header#header
+	%center
+		%h1= item[:title]
+
+
+%section.white-section.text-section
+	%center= @items["/ideekorje.md"].compiled_content(snapshot: :text)
+
+%section#wordclouds.grey-section
+	%center
+		%h2.subheading Hirmud ja lootused
+		%p.paragraph
+			Mõeldes prognoosidele, mille järgi tänaste trendide jätkudes langeb
+			rahvastiku arv juba selle sajandi lõpuks alla 800 000 inimese,
+			jagasid #kuidasmekestame aruteludel osalejad järgmiseid lootusi ja
+			hirme.
+
+		%ul.hopes-and-fears
+			%li
+				%h3.subsubheading Mida me kardame?
+				%img.fears(src="/assets/hirmud.png" alt="Hirmude sõnapilv")
+
+			%li
+				%h3.subsubheading Mida me loodame?
+				%img.hopes(src="/assets/lootused.png" alt="Lootuste sõnapilv")
+
+%section.white-section
+	%center
+		%h2.subheading Millised probleemid on olulisemad?
+		%p.paragraph
+			Aruteludel valisid osalejad välja probleemid, mida nad sündimuse, rände
+			ning tööhõive valdkonnas kõige teravamana tunnetavad. Tulba pikkus märgib
+			kordi, mil probleem kolme olulisema sekka hääletati.
+
+		#problems
+			%input#population-problem-group(type="radio" name="problem-group" checked)
+			%input#migration-problem-group(type="radio" name="problem-group")
+			%input#work-problem-group(type="radio" name="problem-group")
+
+			%menu
+				%a#population-problem-group-button
+					%label(for="population-problem-group") Sündimus
+				%a#migration-problem-group-button
+					%label(for="migration-problem-group") Ränne
+				%a#work-problem-group-button
+					%label(for="work-problem-group") Tööhõive
+
+			:ruby
+				maxes = Hash[problems.map {|category, problems|
+					[category, problems.map {|p| p["rank"] }.max]
+				}]
+
+			- %w[population migration work].each do |category|
+				- probs = problems[category]
+				- max = maxes[category]
+
+				%ol.problems-of(id="#{category}-problems")
+					- probs.sort_by {|p| p["rank"] }.reverse.each do |problem|
+						%li
+							%p= problem["title"]
+							%span.score
+								- percentage = 100 * problem["rank"] / max
+								%span.bar(style="width: #{percentage}%")= problem["rank"]
+
+%section.grey-section
+	%center
+		%h2.subheading Lahendused probleemide kaupa
+		%p.paragraph
+			Arutelude vormis korraldatud ideekorje on tänaseks aidanud sõnastada
+			kümneid lahendusideed. Kogunenud ideid saab uurida lahendatavate
+			probleemide kaupa, number probleemi ees viitab lahenduste arvule.
+			Konkreetseteks ettepanekuteks vormuvad lahenduskäikudena sõnastatud
+			mõtted veebruariks - peale sünteesi, ekspertide mõjuhinnanguid ning 2019.
+			aasta algusesse plaanitud ühisloomet.
+
+		:ruby
+			TITLES = {
+				"population" => "Sündimus",
+				"migration" => "Ränne",
+				"work" => "Tööhõive"
+			}
+
+		#solutions
+			- %w[population migration work].each do |category|
+				- probs = problems[category].select {|p| p.solutions.size > 0 }
+				- title = TITLES[category]
+
+				.solutions-of(id="#{category}-solutions")
+					%h3= title
+					%ol.problems
+						- probs.sort_by {|p| p.solutions.size }.reverse.each do |problem|
+							%li.problem
+								%input(id="#{problem.id}-solutions" type="checkbox")
+
+								%label(for="#{problem.id}-solutions")
+									%i.chevron
+									%span.count= problem.solutions.size
+									%p= problem.title
+
+								%ol.problem-solutions
+									- problem.solutions.each do |solution|
+										%li
+											%span= solution

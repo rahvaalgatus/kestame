@@ -1,27 +1,23 @@
-- time = @discussion["at"]
-- future = time >= Time.now
-
-.discussion.paragraph{id: @id, class: future ? "future" : "past"}
-	%h4= @discussion["title"]
+.discussion.paragraph{id: @id, class: @discussion.future? ? "future" : "past"}
+	%h4= @discussion.title
 
 	%dl
-		%dt= future ? "Toimub" : "Toimus"
+		%dt= @discussion.future? ? "Toimub" : "Toimus"
 		%dd
-			- till = time + 3600 * @discussion["duration"]
-			%time{datetime: time.strftime("%FT%T%:z")}
-				= time.strftime("%-d.%-m.%Y kl %-H:%M")
+			%time{datetime: @discussion.at.strftime("%FT%T%:z")}
+				= @discussion.at.strftime("%-d.%-m.%Y kl %-H:%M")
 
-			- if time != till
-				–#{till.strftime("%-H:%M")}
+			- if @discussion.at != @discussion.until
+				–#{@discussion.until.strftime("%-H:%M")}
 
 		%dt Asukoht
-		%dd= @discussion["address"]
+		%dd= @discussion.address
 
 		%dt Korraldaja
 		%dd
-			- organizer_name = @discussion["organizer_name"]
-			- organizer_email = @discussion["organizer_email"]
-			- organizer_phone = @discussion["organizer_phone"]
+			- organizer_name = @discussion.organizer_name
+			- organizer_email = @discussion.organizer_email
+			- organizer_phone = @discussion.organizer_phone
 			#{organizer_name},&#32;
 			<a href="mailto:#{organizer_email}">#{organizer_email}</a>,&#32;
 			<a href="tel:#{organizer_phone}">#{organizer_phone}</a>

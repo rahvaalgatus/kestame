@@ -1,7 +1,7 @@
 @import "reset";
 $page-width: 100rem;
 $page-padding: 6rem;
-$page-padding-mobile: 3rem;
+$page-padding-mobile: 2rem;
 $text-size: 1.6rem;
 $text-line-height: 1.6;
 $tablet-width: 865px;
@@ -16,6 +16,13 @@ $link-blue: #0078ff;
 $green: #65a580;
 $dark-grey: #323334;
 $light-grey: #f0f1f2;
+$population-problems-color: #ff4800;
+$migration-problems-color: #808284;
+$work-problems-color: #65a580;
+
+@mixin desktop {
+  @media only screen and (min-width: $tablet-width + 1px) { @content }
+}
 
 @mixin tablet {
   @media only screen and (min-width: $mobile-width + 1px) and
@@ -223,7 +230,6 @@ center {
 	}
 
 	menu a {
-		//display: inline-block;
 		border-radius: 0.3rem;
 		border: 1px solid transparent;
 		font-size: 1.3rem;
@@ -295,30 +301,6 @@ center {
 			img { float: none; max-width: 100%; margin-bottom: 2rem; }
 			p { max-width: none; }
 			menu a { margin-top: 1rem; margin-right: 1rem; }
-		}
-	}
-
-	#wordclouds {
-		.hopes-and-fears {
-			margin-top: 4rem;
-			text-align: center;
-		}
-
-		li {
-			display: inline-block;
-			max-width: 50%;
-			vertical-align: top;
-			padding: 0 1rem;
-		}
-
-		img {
-			margin-top: 2rem;
-			max-width: 100%;
-		}
-
-		@include tablet-and-mobile {
-			li { max-width: 50rem; display: block; margin: 0 auto; padding: 0; }
-			li + li { margin-top: 3rem; }
 		}
 	}
 
@@ -474,6 +456,292 @@ center {
 	}
 }
 
+#results-page {
+	.text-section center {
+		max-width: $page-width;
+	}
+
+	#wordclouds {
+		.hopes-and-fears {
+			margin-top: 4rem;
+			text-align: center;
+		}
+
+		li {
+			display: inline-block;
+			width: 50%;
+			vertical-align: top;
+			padding: 0 1rem;
+		}
+
+		img {
+			margin-top: 2rem;
+			max-width: 100%;
+		}
+
+		@include tablet-and-mobile {
+			li { width: auto; display: block; margin: 0 auto; padding: 0; }
+			li + li { margin-top: 3rem; }
+		}
+	}
+
+	#problems {
+		$font-size: $text-size;
+		$line-height: $font-size * 1.4;
+
+		margin-top: 4rem;
+		border: 1px solid $light-grey;
+		border-radius: 0.5rem;
+		font-size: $text-size;
+
+		input {
+			display: none;
+		}
+
+		menu {
+			padding: 0.5rem 0.5rem 0;
+			font-weight: bold;
+			background: $light-grey;
+			text-align: center;
+
+			a {
+				border-top-left-radius: 0.5rem;
+				border-top-right-radius: 0.5rem;
+				line-height: 5rem;
+				display: inline-block;
+				width: 33.33%;
+			}
+
+			label {
+				display: block;
+				cursor: pointer;
+			}
+		}
+
+		.problems-of {
+			display: none;
+			padding: 2rem 2rem 0;
+			line-height: $line-height;
+
+			p,
+			.score {
+				padding: 1rem 0;
+			}
+
+			p {
+				padding-right: 1rem;
+				vertical-align: middle;
+				display: inline-block;
+				text-align: right;
+				width: 40%;
+				border-right: .3rem solid $light-grey;
+			}
+
+			.score {
+				vertical-align: middle;
+
+				display: inline-block;
+				width: 60%;
+				line-height: 4rem;
+				color: white;
+				font-weight: bold;
+
+				.bar {
+					display: block;
+					padding: 0 1rem;
+					border-top-right-radius: 1rem;
+					border-bottom-right-radius: 1rem;
+				}
+			}
+
+			@include tablet-and-mobile {
+				padding-bottom: 2rem;
+
+				p {
+					text-align: left;
+					width: auto;
+					border-right: 0;
+				}
+
+				.score {
+					width: 100%;
+					line-height: 3rem;
+
+					.bar {
+						border-radius: 1rem;
+					}
+				}
+			}
+			
+			@include desktop {
+				:last-child p,
+				:last-child .score { padding-bottom: 2rem; }
+			}
+		}
+
+		#population-problems .bar { background-color: $population-problems-color; }
+		#migration-problems .bar { background-color: $migration-problems-color; }
+		#work-problems .bar { background-color: $work-problems-color; }
+
+		#population-problem-group:checked ~ menu #population-problem-group-button,
+		#migration-problem-group:checked ~ menu #migration-problem-group-button,
+		#work-problem-group:checked ~ menu #work-problem-group-button {
+			background: white;
+		}
+
+		#population-problem-group:checked ~ #population-problems,
+		#migration-problem-group:checked ~ #migration-problems,
+		#work-problem-group:checked ~ #work-problems {
+			display: block;
+		}
+	}
+
+	#solutions {
+		$padding: 1rem;
+		margin-top: 4rem;
+		margin-left: -$padding;
+		margin-right: -$padding;
+
+		.solutions-of {
+			padding: 0 $padding;
+			width: 33.33%;
+			display: inline-block;
+			vertical-align: top;
+			font-size: $text-size;
+			color: white;
+
+			@include tablet-and-mobile {
+				width: auto;
+				padding: 0;
+				display: block;
+
+				& + .solutions-of {
+					margin-top: 4rem;
+				}
+			}
+
+			h3 {
+				height: 5rem;
+				border-radius: 0.5rem;
+				line-height: 5rem;
+				text-align: center;
+				font-weight: bold;
+			}
+
+			.problems {
+				margin-top: 2rem;
+			}
+
+			.problem {
+				$count-width: 5rem;
+				$chevron-width: 2.4rem;
+				border-radius: 0.5rem;
+				font-size: 1.3rem;
+				line-height: 1.4;
+
+				input { display: none; }
+
+				label {
+					display: block;
+					padding: 1.2rem 1rem 1.2rem 0;
+					cursor: pointer;
+					overflow: hidden;
+
+					.count {
+						float: left;
+						line-height: 3.2rem;
+						width: $count-width;
+						text-align: center;
+						font-size: 3rem;
+						font-weight: 600;
+						font-family: $headline-font;
+					}
+
+					p {
+						margin-left: $count-width;
+						margin-right: $chevron-width;
+					}
+
+					.chevron {
+						float: right;
+						background: url("/assets/chevron-down.svg") center no-repeat;
+						width: $chevron-width;
+						height: $chevron-width + 1rem;
+					}
+				}
+
+				.problem-solutions {
+					display: none;
+					color: black;
+					border-bottom-left-radius: 0.5rem;
+					border-bottom-right-radius: 0.5rem;
+					padding: 1.5rem 1.5rem 0 1rem;
+					box-shadow: inset 0 0.2rem 0 0 rgba(black, .2);
+					max-height: 30rem;
+					overflow: auto;
+
+					li {
+						margin-left: 1.5rem;
+						list-style-type: numeric;
+						font-weight: bold;
+						font-size: 1.1rem;
+
+						span {
+							font-weight: normal;
+							font-size: 1.3rem;
+						}
+					}
+
+					li + li {
+						margin-top: 0.5rem;
+					}
+
+					// https://bugzilla.mozilla.org/show_bug.cgi?id=748518
+					li:last-child { padding-bottom: 1.5rem; }
+
+					@include tablet-and-mobile {
+						overflow: visible;
+						max-height: none;
+					}
+				}
+
+				input:checked ~ label .chevron {
+					background-image: url("/assets/chevron-up.svg");
+				}
+
+				input:checked ~ .problem-solutions { display: block; }
+
+				& + .problem { margin-top: 1rem; }
+			}
+		}
+
+		#population-solutions h3,
+		#population-solutions .problem {
+			background-color: $population-problems-color;
+		}
+
+		#population-solutions .problem-solutions {
+			background-color: lighten($population-problems-color, 43%);
+		}
+
+		#migration-solutions h3,
+		#migration-solutions .problem {
+			background-color: $migration-problems-color;
+		}
+
+		#migration-solutions .problem-solutions {
+			background-color: lighten($migration-problems-color, 40%);
+		}
+
+		#work-solutions h3,
+		#work-solutions .problem { background-color: $work-problems-color; }
+
+		#work-solutions .problem-solutions {
+			background-color: lighten($work-problems-color, 40%);
+		}
+	}
+}
+
 #footer {
 	padding: 4rem 0;
 	font-size: 1.4rem;
@@ -491,7 +759,6 @@ center {
 
 		@include mobile {
 			display: block;
-			width: auto;
 		}
 	}
 
@@ -499,6 +766,7 @@ center {
 		width: 33%;
 
 		@include tablet { width: 50%; }
+		@include mobile { width: auto; }
 	}
 
 	#supporters {
@@ -527,6 +795,7 @@ center {
 		@include mobile {
 			padding-left: 0;
 			margin-top: 4rem;
+			width: auto;
 		}
 	}
 }
