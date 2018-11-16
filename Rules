@@ -26,7 +26,7 @@ compile "/**/*.haml" do
 	write item.identifier.without_ext + "/index.html"
 end
 
-compile "/{kalender,ideekorje}.md" do
+compile "/{kalender,tulemused}.md" do
 	filter_with_kramdown[self]
 	snapshot :text
 end
