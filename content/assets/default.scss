@@ -16,9 +16,10 @@ $link-blue: #0078ff;
 $green: #65a580;
 $dark-grey: #323334;
 $light-grey: #f0f1f2;
-$population-problems-color: #ff4800;
+$orange: #ff4800;
+$population-problems-color: $orange;
 $migration-problems-color: #808284;
-$work-problems-color: #65a580;
+$work-problems-color: $green;
 
 @mixin desktop {
   @media only screen and (min-width: $tablet-width + 1px) { @content }
@@ -191,6 +192,7 @@ center {
 
 .blue-button,
 .green-button,
+.orange-button,
 .white-button {
 	display: inline-block;
 	padding: 0 2.5rem;
@@ -204,6 +206,7 @@ center {
 
 .blue-button { background: $blue; color: white; }
 .green-button { background: $green; color: white; }
+.orange-button { background: $orange; color: white; }
 .white-button { background: white; color: $blue; border: 1px solid $blue; }
 
 #nav,
@@ -370,6 +373,8 @@ center {
 				display: block;
 			}
 		}
+
+		p { margin-top: 6rem; text-align: center; }
 	}
 }
 

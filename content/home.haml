@@ -24,6 +24,7 @@ page: home
 		%menu
 			%a.blue-button(href="/algatusest/") Loe rohkem
 			%a.green-button(href="/o-nas/") Подробнее
+			%a.orange-button(href="/tulemused/") Tulemused
 
 %section#join.white-section
 	%center
@@ -77,3 +78,6 @@ page: home
 			- past_people = past.map(&:people_count).sum
 			%li <em>#{format("%02d", past.size)}</em> arutelu korraldatud
 			%li <em>#{format("%02d", past_people)}</em> inimest osalenud aruteludes
+
+		%p
+			%a.orange-button(href="/tulemused/") Tutvu tulemustega
