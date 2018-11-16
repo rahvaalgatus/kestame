@@ -294,20 +294,37 @@ center {
 
 #home-page {
 	#welcome {
+		p {
+			width: 50%;
+			padding-right: 2rem;
+		}
+
+		iframe {
+			float: right;
+			width: 44rem;
+			max-width: 50%;
+			height: 44rem * 9 / 16;
+			margin-bottom: 3rem;
+		}
+
 		menu {
+			clear: both;
 			margin-top: 4rem;
 			text-align: center;
+
 			a { margin-right: 4rem; }
 		}
 
-		@include tablet {
-			p { max-width: none; }
+		@include tablet-and-mobile {
+			center { padding-top: 0; }
+			p { width: auto; padding-right: 0; }
+			iframe { float: none; width: 100%; max-width: none; }
+			menu a { margin-top: 1rem; margin-right: 1rem; }
 		}
 
 		@include mobile {
-			img { float: none; max-width: 100%; margin-bottom: 2rem; }
-			p { max-width: none; }
-			menu a { margin-top: 1rem; margin-right: 1rem; }
+			img { float: none; margin-bottom: 2rem; }
+			iframe { margin-bottom: 2rem; height: auto; }
 		}
 	}
 

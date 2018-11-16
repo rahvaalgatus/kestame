@@ -10,6 +10,12 @@ page: home
 
 %section#welcome.white-section
 	%center
+		%iframe(src="https://player.vimeo.com/video/296874043"
+			frameborder="0"
+			webkitallowfullscreen
+			mozallowfullscreen
+			allowfullscreen)
+
 		%p.paragraph
 			<strong>Teadlased ennustavad Eestile lähemateks kümnenditeks rahvaarvu
 			jätkuvat ja olulist kahanemist.</strong> Kahanev rahvaarv võib kujutada tõsist
@@ -26,7 +32,7 @@ page: home
 			%a.green-button(href="/o-nas/") Подробнее
 			%a.orange-button(href="/tulemused/") Tulemused
 
-%section#join.white-section
+%section#join.grey-section
 	%center
 		%h2.subheading Algatuses saab igaüks osaleda
 
@@ -58,18 +64,6 @@ page: home
 					ettepanekuid ka avalikul veebiplatvormil. 
 				%a.blue-button(href="/tulemused/") Kirjutan
 
-%section.grey-section
-	%center
-		%h2.subheading Arutelude kaart
-
-		%p.paragraph
-			NB! Kui soovid osaleda arutelul, palun kirjuta konkreetse arutelu
-			korraldajale. Sa näed tema andmeid, kui vajutad kaardil ikoonile.
-			Kaarti saad suurendada (+), mis toob nähtavale rohkem arutelusid.
-
-%section#map
-	%center= render "/_map.haml", discussions: discussions
-
 %section#counter.white-section
 	%center
 		%h2.subheading Hetkeks on...
@@ -81,3 +75,15 @@ page: home
 
 		%p
 			%a.orange-button(href="/tulemused/") Tutvu tulemustega
+
+%section.grey-section
+	%center
+		%h2.subheading Arutelude kaart
+
+		%p.paragraph
+			NB! Kui soovid osaleda arutelul, palun kirjuta konkreetse arutelu
+			korraldajale. Sa näed tema andmeid, kui vajutad kaardil ikoonile.
+			Kaarti saad suurendada (+), mis toob nähtavale rohkem arutelusid.
+
+%section#map
+	%center= render "/_map.haml", discussions: discussions
