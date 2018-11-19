@@ -1,13 +1,14 @@
 category,title,rank,solutions
-Sündimus,Eesti leibkondadest suurima osa moodustavad ühe lapsega pered,4,
-Sündimus,Pere loomist lükatakse edasi ja nii esimene kui ka järgmised lapsed sünnivad üha hiljem,7,"Uuenenud emaduse olemuse uurimine (nt. rollid, mentaliteet, naiste vaatenurk)."
-Sündimus,Vanematel on keeruline ühildada töö- ja pereelu,10,"Avalikes/vaba aja veetmise kohtades lapse mängu- ja hoiukohtade loomine. 
+Sündimus,Eesti leibkondadest suurima osa moodustavad ühe lapsega pered,5,
+Sündimus,Pere loomist lükatakse edasi ja nii esimene kui ka järgmised lapsed sünnivad üha hiljem,9,"Uuenenud emaduse olemuse uurimine (nt. rollid, mentaliteet, naiste vaatenurk)."
+Sündimus,Vanematel on keeruline ühildada töö- ja pereelu,12,"Avalikes/vaba aja veetmise kohtades lapse mängu- ja hoiukohtade loomine. 
 Mõistlik ja arusaaja tööandja loob töökohtade juurde lastehoiukohad. 
 Koostöös riigiga muuta tööandjate suhtumine töösse ja tööaega paindlikumaks (mh kaugtöö, toetavad teenused, perekeskne lähenemine töökohal). 
 Väikeste lastega pered ja osaajaga töötamine: a) rakendada madalamat sotsiaalmaksu lapsega kodus olnud vanema hõivamisel, b) ettevõtete tunnustamine, kus töötab palju väikeste laste vanemaid (positiivsed näited ja lahendused), c) lapsehoiu korraldamine ettevõtetes, kasvõi 1 päev nädalas, d) pikendada tervisekindlustust vanematele, kes valivad lapse kasvatamise tööl käimise asemel. "
-Sündimus,Lasterikkus asetab pered kehvemasse majanduslikku olukorda,4,"Süsteem, mis aitaks lihtsustada perekondadele vajaliku eluaseme soetamist ja parandada transpordivõimalusi. 
-Iga inimese riik!: igale Eesti kodanikule hääleõigus sünnist surmani, mis annab suurtele peredele rohkem häälekaalu."
-Sündimus,Peredel puudub piisav tugi- ja muude teenuste võrgustik,3,"One Stop Shop ANNA: lapsevanemale (ka neile, kes plaanivad lapsi saada või Eestisse tagasi tulla) kogu info ja teenused (tellimine, tugimaterjalid) ühest kohast. 
+Sündimus,Lasterikkus asetab pered kehvemasse majanduslikku olukorda,6,"Süsteem, mis aitaks lihtsustada perekondadele vajaliku eluaseme soetamist ja parandada transpordivõimalusi. 
+Iga inimese riik!: igale Eesti kodanikule hääleõigus sünnist surmani, mis annab suurtele peredele rohkem häälekaalu.
+Mitte-formaalne haridus massidesse: mitteformaalne haridus peab jõudma lapseni, mitte laps hariduseni ("
+Sündimus,Peredel puudub piisav tugi- ja muude teenuste võrgustik,4,"One Stop Shop ANNA: lapsevanemale (ka neile, kes plaanivad lapsi saada või Eestisse tagasi tulla) kogu info ja teenused (tellimine, tugimaterjalid) ühest kohast. 
 Muuta paindlik töö ühiskonna loomulikuks osaks: sh tööandjate koolitamine, et nad oskaks hinnata lastega vanemate oskusi ja motiveeritust ning leida võimalusi paindlikuks graafikuks; lastele õpetatakse, et nii ema kui isa on võrdselt vanemad ja töötajad."
 Sündimus,Võimalused laste kasvatamiseks sobiva elukeskkonna kujundamiseks on paikkonniti erinevad,5,"Kehtestada kodanikupalk (lahendab vaesuse ja ebavõrdsuse probleeme). 
 Lõpetada lihtsustav lähenemine poliitikakujundamises, kus Tallinn ja väikealevid on võrdsed. 
@@ -15,38 +16,44 @@ Koduehitamise mudel puust ja punaseks: noor pere saab toetuse ja juhised lihtsa 
 Huvitakso E- süsteem:  vajaduste  ja võimaluste kaardistamine (kellel vaja sõita kuhu), huvitakso käivitamine (autopartner), huvitakso fondi käivitamine (panustab KOV, riik, ettevõtjad, eraisikud). 
 Noore elu maal: vald aitab soetada kodu (intressivaba laen), leida ettevõtluseks sobiva pinna (tehes soodustusi) ja kui on töö/kodu, tulevad ka lapsed. "
 Sündimus,"Pereväärtused on muutunud, puuduvad traditsioonid",1,
-Sündimus,"Rahulolematus paarisuhtega on üks põhjustest, miks naised ei julge rohkem lapsi saada",3,
+Sündimus,"Rahulolematus paarisuhtega on üks põhjustest, miks naised ei julge rohkem lapsi saada",4,"Lastevanemate koolitused kooli kaudu, paarisuhte koolitused (45+ ja 25+), perepäevad, töökasvatus - koduste tegemiste jagamine lastega, teemade tõstatamine paralleelselt."
 Sündimus,Vanemlus ei ole süsteemselt ja piisavalt toetatud,1,
-Ränne,"Välismaalastesse suhtutakse eelarvamustega ja ei hinnata nende võimalikku positiivset panust ühiskonda, majandusse ja kultuuriellu",3,Luua põliselanike ning uussisserändajate koos tegutsemiseks rohkem võimalusi - nt ühishackatonid.
-Ränne,Eestis kõrghariduse omandanud välistudengite potentsiaali ei osata ära kasutada,2,
-Ränne,"Palkadevaheline ebavõrdsus soodustab inimeste koondumist linnadesse ja rännet välismaale, maakohad jäävad aga tühjemaks",11,"Maakogukondades toimuvad lahedad asjad nähtavaks (veeb, tõsieluseriaal, küladevaheline TV võistlus). 
+Sündimus,Isade roll laste kasvatamisel on alatähtsustatud,1,
+Ränne,"Välismaalastesse suhtutakse eelarvamustega ja ei hinnata nende võimalikku positiivset panust ühiskonda, majandusse ja kultuuriellu",4,Luua põliselanike ning uussisserändajate koos tegutsemiseks rohkem võimalusi - nt ühishackatonid.
+Ränne,Eestis kõrghariduse omandanud välistudengite potentsiaali ei osata ära kasutada,3,
+Ränne,"Palkadevaheline ebavõrdsus soodustab inimeste koondumist linnadesse ja rännet välismaale, maakohad jäävad aga tühjemaks",14,"Maakogukondades toimuvad lahedad asjad nähtavaks (veeb, tõsieluseriaal, küladevaheline TV võistlus). 
 Maapiirkonda kestlikud ettevõtted: uurida kohalikku ressurssi, aidata leida ettevõtlusideed, alustavale ettevõtjale toetus. 
 Abinõud, mis kutsuksid inimesi maale elama (maksusoodustused maakohtade elanikele, ettevõtlusmaksude alandamine, noorte perede eluasemelaenu soodustused jne). 
 Think-thank+sovhoos= thinkhoos (liikuvad loomeinkubaatorid külakeskustes ja rahvamajades): a) kaardistavad piirkonna ressursid ja väljakutsed b) toimuvad häkathonid või mõttetalgud lahenduste leidmiseks c) koos on linnaajud ja kohalikud d) kaasatakse disainerid e) kaasnev haridusprogramm lastele ja noortele f) loomekeskustest kasvavad välja mittekohapõhiste töökohtade pesad. 
 Maaelu linnaga võrdseks: ""Muuta regionaalpoliitikat"". 
 ""Polka"" positiivse rände teenistusse. Ühe lahendusena riigipoolne tugi: toetusmeetmed ja maksusoodustused maapiirkondadele, nt maksuerisused (tööjõumaks, ettevõtte tulumaks) jne. 
 Maale tööle! Soodsa ettevõtluskliima/elukeskkonna loomine maapiirkondadesse: a) maksuerisused, b) toetus äri-ja eluruumide toetamisel, c) riiklikud toetused maapiirkonna ettevõtlusele, d) kaugtöövõimaluste soodustamine, e) sotsiaalse infrastuktuuri tagamine.
-Kui riik teeb kogukonna ettepanekul  targad otsused, valivad noored elukohaks pigem maa, mitte suurlinna.  "
+Kui riik teeb kogukonna ettepanekul  targad otsused, valivad noored elukohaks pigem maa, mitte suurlinna.  
+Terviklahendus: ettevõtlikkuse arendamine täiskasvanutes ja noortes, riiklikud ja omavalitsuste toetused, parem infrastruktuur ja võrgustikud, kaasaegsed töövormid. 
+Riik soodustab maaelanikke rohkemate ""raha kätte"" soodustustega (nt tulumaks 15%) ja annab elamukrundi. 
+Leiame üles väike-ettevõtjad, kes oleksid eeskujuks ja läbi oma eduloo jutustamise motiveeriksid ka noori väike-ettevõtjaks hakkama. Abiks on ka õppereisid. "
 Ränne,Teatud valdkondades on välismaal töö leidmise tõenäosus ja karjäärivõimalused suuremad,9,Paindliku töökorralduse võimaldamine.
-Ränne,Eesti ei ole atraktiivne töötamise sihtriik välisspetsialistidele,2,
-Ränne,"Väliskogukondi ei tunnustata piisavalt ning välismaal elavad eestlased ei tunne, et Eesti riik neid vajab",3,"Majanduslik koostöö: auhind piirkonnale, kes on suutnud tagasi meelitada väljarändajaid või teinud nendega head koostööd; kodus luua parem keskkond, infra, teenused, toetused, et anda põhjust tagasi tulla."
+Ränne,Eesti ei ole atraktiivne töötamise sihtriik välisspetsialistidele,3,
+Ränne,"Väliskogukondi ei tunnustata piisavalt ning välismaal elavad eestlased ei tunne, et Eesti riik neid vajab",4,"Majanduslik koostöö: auhind piirkonnale, kes on suutnud tagasi meelitada väljarändajaid või teinud nendega head koostööd; kodus luua parem keskkond, infra, teenused, toetused, et anda põhjust tagasi tulla."
 Ränne,Piiratud on eestlaste valmisolek välismaalastega suhelda ning neid igapäevaellu kaasata,3,
 Ränne,"Valdav on hirm, et välismaalased ei kohane ega lõimu, kasutavad ära meie sotsiaalsüsteemi",1,
 Ränne,Eestlased tajuvad ebavõrdset kohtlemist siia tulevate/toodavate inimeste suhtes võrreldes siin juba abivajavate inimestega,1,
-Ränne,"Tagasirändajaisse suhtutakse mõnikord kui läbikukkujatesse, kes välismaal hakkama ei saanud",1,
+Ränne,"Tagasirändajaisse suhtutakse mõnikord kui läbikukkujatesse, kes välismaal hakkama ei saanud",2,
+Ränne,"Eestis elavad teistest rahvustest inimesed tajuvad ebavõrdseid võimalusi nii ühiskonnaelus osalemises, töö-, haridus- kui kultuurielus",1,
 Tööhõive,Eestit iseloomustab madal tööjõutootlikkus,1,
-Tööhõive,Ligi 30 000 noort vanuses 15-29 ei käi koolis ega tööl,8,"Lisaraha eraldamine KOVidele sotsiaalteenuste arendamiseks. 
-Haridusmürsk: uuendusmeelne süsteem ja personal ning abiõpetajate mudel, et aidata õpilaste mahajäämust vähendada, sh 1) õpilasele personaalne õppeplaan 2) õppeainete sidusus, mis lubab leida aega põhiainete omandamisele kuluvast ajast uute teadmiste omandamiseks."
-Tööhõive,Juhtimiskvaliteet on Eesti ettevõtetes ja organisatsioonides madal,6,"Juhtimine külakorda: tööprotsessides lepitakse ühiselt kokku; selgitustöö, miks on töötajate kaasamata jätmine majanduslikult kahjulik.
+Tööhõive,Ligi 30 000 noort vanuses 15-29 ei käi koolis ega tööl,9,"Lisaraha eraldamine KOVidele sotsiaalteenuste arendamiseks. 
+Haridusmürsk: uuendusmeelne süsteem ja personal ning abiõpetajate mudel, et aidata õpilaste mahajäämust vähendada, sh 1) õpilasele personaalne õppeplaan 2) õppeainete sidusus, mis lubab leida aega põhiainete omandamisele kuluvast ajast uute teadmiste omandamiseks.
+Noored spetsialistideks: ametikoolid - õppekavade paindlik vahetamine vastavalt riiklikule vajadusele. Ka kutsehariduse väärtustamine ja turundamine. "
+Tööhõive,Juhtimiskvaliteet on Eesti ettevõtetes ja organisatsioonides madal,7,"Juhtimine külakorda: tööprotsessides lepitakse ühiselt kokku; selgitustöö, miks on töötajate kaasamata jätmine majanduslikult kahjulik.
 "
 Tööhõive,"Täiend- ja ümberõpe ei ole piisavalt toetatud, uues valdkonnas on inimestel keeruline tööd leida",4,"Personaalne õpikonto: igale töötavale inimesele laekub kontole õppimiseks konkreetne summa, mille kasutamises lepitakse tema huvide ja vestluse põhjal kokku, millised koolitused on talle enesetäiendamiseks kasulikud ja mida saab õpikonto kaudu rahastada.
 Ametipõhised e-õppeplatvormid koos praktikabaasiga. 
 Koolitus töökohal: ametisse valitud töötajate õpe tagatakse ettevõttes kohapeal. 
 Ümberõpe on popp!: 1) avalik ümberõppe populariseerimise programm 2) töövarju ja tööpausi võimalused igas vanuses 3) eestikeelsete e-õppe võimaluste loomine ümber- ja täiendõppeks. "
-Tööhõive,Eestis on oskustööjõu puudus: 2017. aasta lõpus oli saadaval üle 10000 töökoha,1,Osapooli kaasav töörühm probleemi adresseeriva ja samm-sammulist tegevusplaani hõlmava ühisstrateegiaga.
+Tööhõive,Eestis on oskustööjõu puudus: 2017. aasta lõpus oli saadaval üle 10000 töökoha,3,Osapooli kaasav töörühm probleemi adresseeriva ja samm-sammulist tegevusplaani hõlmava ühisstrateegiaga.
 Tööhõive,"Noorte ootused tööle (palgad, töökorraldus, jm) ei vasta tööturul pakutavale",5,"Reaalse tööpraktika astmeline süsteem, lisaks tööandjate koolitamine ja ettevõtjaks hakkamise motiveerimine."
-Tööhõive,Eestis on üheaegselt struktuurne tööjõupuudus ja tööpuudus,4,"Elukestva õppe ja ühistegevuse institutsionaliseerimine - vabaühendusi, ametnikke, spetsialiste koondava rahvakogu kokkukutsumine"
-Tööhõive,"Töötajatel on vähe võimalusi paindlikuks tööks, sh osakoormusega ja kaugtööks, mis jätab osa töövõimelistest inimestest tööturult kõrvale",8,"Tööandjate motiveerimine kaugtöö rakendamiseks. 
+Tööhõive,Eestis on üheaegselt struktuurne tööjõupuudus ja tööpuudus,6,"Elukestva õppe ja ühistegevuse institutsionaliseerimine - vabaühendusi, ametnikke, spetsialiste koondava rahvakogu kokkukutsumine"
+Tööhõive,"Töötajatel on vähe võimalusi paindlikuks tööks, sh osakoormusega ja kaugtööks, mis jätab osa töövõimelistest inimestest tööturult kõrvale",9,"Tööandjate motiveerimine kaugtöö rakendamiseks. 
 Nutikas transport: efektiivselt korraldatud ja jagatud transport, mis aitaks sõita mugavalt tööle ja tagasi. 
 Osakoormus normiks: soodustada maksusoodustustega osakoormusega töötamist teatud gruppidele (nt vähese töövõimega inimesed, noored, lastega perede vanemad jt, kel mingil põhjusel ei ole võimalik täiskoormusel töötada).
 Kõik tegudele: väike tööamps igale soovijale kui lahendus paindlikuks töötamiseks. Õppivate noorte puhul sotsiaalmaksuvabastus tööandjale teatud summa/töötasu suurusest alates."
