@@ -13,7 +13,7 @@ data_sources:
 deploy:
   default:
     kind: rsync
-    dst: "rahvaalgatus.ee:domeenid/www.rahvaalgatus.ee/kestame"
+    dst: "kestame.rahvaalgatus.ee:domeenid/www.rahvaalgatus.ee/kestame"
     options: &rsync_options
       - "--verbose"
       - "--recursive"
@@ -23,8 +23,3 @@ deploy:
       - "--omit-dir-times"
       - "--delete-after"
       - "--chmod=u=rwX,go=rX"
-
-  next:
-    kind: rsync
-    dst: "rahvaalgatus.ee:domeenid/www.rahvaalgatus.ee/kestame-next"
-    options: *rsync_options
