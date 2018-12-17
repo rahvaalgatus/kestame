@@ -34,7 +34,7 @@ page: home
 	- discussions = read_discussions(@items["/discussions.csv"])
 	- problems = read_problems(@items["/problems.csv"])
 	- past_people_count = discussions.select(&:past?).map(&:people_count).sum
-	- ideas_count = problems.values.flatten.map(&:size).sum
+	- ideas_count = problems.values.flatten.map(&:solutions).map(&:size).sum
 
 	%center
 		%h2.subheading Algatuses sai igaüks osaleda
