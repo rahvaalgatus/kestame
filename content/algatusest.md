@@ -5,13 +5,13 @@ title: "Algatusest"
 
 Kutsume üles kõiki Eesti kestma jäämisest hoolivaid inimesi ja kogukondade, vabaühenduste, meedia, omavalitsuste ja riigi esindajaid otsima ühisosa ja lahendusi demograafiliste trendide muutmiseks ja kahanevast rahvastikust tulenevate probleemidega toimetulemiseks. Ühisloome ja koostöö on aluseks sellele, et rahvastikuprotsesside juhtimine ja inimvara väärtustamine saab kogukondades ja riigis sisuliselt prioriteetseks küsimuseks ning väljendub meie igapäevastes tegevustes ja suhtumises.
 
-Kodanikualgatuslikud #kuidasmekestame arutelud aitavad luua platvormi ühiskondliku kokkuleppe sünniks, mis on vajalikud elujõulise Eesti tagamiseks. Arutelud on üle Eesti ([vaata kaarti](/kalender/)) toimuvad ning kokkulepitud formaati järgivad kogukondlikud diskussioonid, mille eesmärgiks on:
+Kodanikualgatuslikud #kuidasmekestame arutelud toimusid 2018. aasta oktoobrist detsembrini, et aidata luua platvormi elujõulise Eestiühiskondliku kokkuleppe sünniks. Arutelud toimusid üle Eesti ([vaata kaarti](/kalender/)) ning järgisid kogukondlike diskussioonidena ühtset formaati. Eesmärgiks oli:
 
 -   Eesti rahvastiku seisu ja rahvastiku vähenemisest tulenevate probleemide teadvustamine
 -   võimalike lahendussuundade teadvustamine
 -   ühisloomes lahenduste otsimine ja ettepanekute tegemine
 
-Arutelude formaat sisaldab rahvastikutrendidega seotud info ja faktide avamist, lootuste ja hirmude jagamist, ühisosa otsimist ning probleemidele lahendusideede väljatöötamist. Arutelu tulemuseks on tegevusettepanekud sellest, mida iga kogukond ise saab ette võtta oma elujõu hoidmiseks ning rahvastikumuutustega toimetulemiseks, aga ka ettepanekud kohalikule omavalitsusele ja riigile vajalikeks otsusteks. Mõned mõjusatest lahendusideedest sobivad kohalike omavalitsuste ja riigi tulevikustrateegiatesse ja -tegevuskavadesse, teised nõuavad laiemat ühiskondlikku lepet. Viimaste puhul aitame sõnastada algatused, mida peale arutelude toimumist ühisloomes täpsustakse kuni neil on piisavalt toetust [kollektiivse pöördumisena](https://rahvaalgatus.ee) Riigikogule esitamiseks
+Arutelude formaat sisaldab rahvastikutrendidega seotud info ja faktide avamist, lootuste ja hirmude jagamist, ühisosa otsimist ning probleemidele lahendusideede väljatöötamist. Tulemusena kogusime kokku tegevusettepanekud sellest, mida iga kogukond ise saab ette võtta oma elujõu hoidmiseks ning rahvastikumuutustega toimetulemiseks, aga ka ettepanekud kohalikule omavalitsusele ja riigile vajalikeks otsusteks. Mõned mõjusatest lahendusideedest sobivad kohalike omavalitsuste ja riigi tulevikustrateegiatesse ja -tegevuskavadesse, teised nõuavad laiemat ühiskondlikku lepet. Viimaste puhul aitame sõnastada algatused, mida peale arutelude toimumist ühisloomes täpsustakse kuni neil on piisavalt toetust [kollektiivse pöördumisena](https://rahvaalgatus.ee) Riigikogule esitamiseks
 
 ## Ettepanekute teekond poliitika&shy;kujundajateni
 
@@ -21,6 +21,6 @@ Arutelude formaat sisaldab rahvastikutrendidega seotud info ja faktide avamist, 
 
 Kodanikualgatuslike arutelude sari tehakse teoks koostöös Avatud Eesti Fondi, Eesti Tööandjate Keskliidu, Mainor AS, Eesti Kaubandus-Tööstuskoja, EAS Work in Estonia programmi, TalTechi, Teenusmajanduse Koja, Vabaühenduste Liidu, Eesti Koostöö Kogu, IOM, Siseministeeriumi ja Kultuuriministeeriumiga. Projekti “Teadlikkuse suurendamine Eesti inimvara seisust ja ühisloome võimalikest lahendustest” kaasrahastavad Euroopa Liit Varjupaiga- , Rände- ja Integratsioonifondi kaudu ning Siseministeerium.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MTU2NzYxNDQsLTE0MjA5OTEwNDgsNz
-k5NjQ5MzYsMzgyNjAzMzk2XX0=
+eyJoaXN0b3J5IjpbLTE2NDcwMjMwLC0xODE1Njc2MTQ0LC0xND
+IwOTkxMDQ4LDc5OTY0OTM2LDM4MjYwMzM5Nl19
 -->
