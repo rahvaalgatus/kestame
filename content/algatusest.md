@@ -5,7 +5,7 @@ title: "Algatusest"
 
 Kutsume üles kõiki Eesti kestma jäämisest hoolivaid inimesi ja kogukondade, vabaühenduste, meedia, omavalitsuste ja riigi esindajaid otsima ühisosa ja lahendusi demograafiliste trendide muutmiseks ja kahanevast rahvastikust tulenevate probleemidega toimetulemiseks. Ühisloome ja koostöö on aluseks sellele, et rahvastikuprotsesside juhtimine ja inimvara väärtustamine saab kogukondades ja riigis sisuliselt prioriteetseks küsimuseks ning väljendub meie igapäevastes tegevustes ja suhtumises.
 
-Kodanikualgatuslikud #kuidasmekestame arutelud toimusid 2018. aasta oktoobrist detsembrini, et aidata luua platvormi elujõulise Eestiühiskondliku kokkuleppe sünniks. Arutelud toimusid üle Eesti ([vaata kaarti](/kalender/)) ning järgisid kogukondlike diskussioonidena ühtset formaati. Eesmärgiks oli:
+Kodanikualgatuslikud #kuidasmekestame arutelud toimusid 2018. aasta oktoobrist detsembrini, et aidata luua platvormi elujõulise Eestiühiskondliku kokkuleppe sünniks. Arutelud toimusid üle Eesti ([vaata kaarti](/arutelud/)) ning järgisid kogukondlike diskussioonidena ühtset formaati. Eesmärgiks oli:
 
 -   Eesti rahvastiku seisu ja rahvastiku vähenemisest tulenevate probleemide teadvustamine
 -   võimalike lahendussuundade teadvustamine

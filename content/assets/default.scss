@@ -414,7 +414,7 @@ center {
 }
 
 #home-page #map,
-#calendar-page #map {
+#discussions-page #map {
 	background-color: #f2f2f0;
 
 	background-image: linear-gradient(
@@ -429,7 +429,7 @@ center {
 }
 
 #home-page #discussions-map,
-#calendar-page #discussions-map {
+#discussions-page #discussions-map {
 	width: 100%;
 	height: 50rem;
 
@@ -450,7 +450,7 @@ center {
 }
 
 #discussions-map .discussion,
-#calendar-page .discussion {
+#discussions-page .discussion {
 	h4 { color: $blue; }
 	&.past h4 { color: $dark-grey; }
 
@@ -468,7 +468,7 @@ center {
 	}
 }
 
-#calendar-page {
+#discussions-page {
 	#video {
 		background-color: $blue;
 		center { padding: 0; max-width: $text-section-width; }

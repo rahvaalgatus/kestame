@@ -1,7 +1,6 @@
 ---
-title: Arutelude kalender
+title: Arutelud
 ---
-
 Kaardilt on võimalik näha kus toimusid arutelud oktoobri - detsembri 2018 jooksul. Kaarti saad suurendada (+), mis toob nähtavale rohkem arutelusid.
 
 <!--stackedit_data:

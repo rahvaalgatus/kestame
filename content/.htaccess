@@ -1,6 +1,7 @@
 RewriteEngine on
 RewriteRule ^сохранимся/?$ /o-nas/ [last,redirect]
 RewriteRule ^ideekorje/?$ /tulemused/ [last,redirect]
+RewriteRule ^kalender/?$ /arutelud/ [last,redirect]
 
 <FilesMatch "\.(html|js|json|css|eot|woff|woff2|ttf|jpg|jpeg|png|svg)$">
 Header set Cache-Control "max-age=0, public, must-revalidate"

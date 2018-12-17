@@ -1,6 +1,6 @@
 ---
-title: Arutelude kalender
-page: calendar
+title: Arutelud
+page: discussions
 ---
 %header#header.text-header
 	%center
@@ -15,7 +15,7 @@ page: calendar
 			allowfullscreen)
 
 %section.white-section.text-section
-	%center= @items["/kalender.md"].compiled_content(snapshot: :text)
+	%center= @items["/arutelud.md"].compiled_content(snapshot: :text)
 
 - discussions = read_discussions(@items["/discussions.csv"])
 %section#map
