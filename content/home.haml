@@ -2,8 +2,6 @@
 title: "Kogukondlikud arutelud #kuidasmekestame"
 page: home
 ---
-- discussions = read_discussions(@items["/discussions.csv"])
-
 %header#header
 	%center
 		%h1= item[:title]
@@ -33,57 +31,41 @@ page: home
 			%a.orange-button(href="/tulemused/") Tulemused
 
 %section#join.grey-section
+	- discussions = read_discussions(@items["/discussions.csv"])
+	- problems = read_problems(@items["/problems.csv"])
+	- past_people_count = discussions.select(&:past?).map(&:people_count).sum
+	- ideas_count = problems.values.flatten.map(&:size).sum
+
 	%center
 		%h2.subheading Algatuses sai igaüks osaleda
 
 		%ul
 			%li.join-through
 				%img(src="/assets/icon-calendar.svg")
-				%h3.subsubheading Korralda arutelu oma kogukonnas
 				%p.paragraph
-					Ole eestvedajaks ja kutsu oma paikkonna inimesed või mõttekaaslased
-					rahvastiku hoidmise teemat arutama ja probleemidele lahendusi välja
-					töötama.
-				%a.blue-button(href="/korraldajale/") Korraldan
+					Toimus #{discussions.size} kogukondlikku arutelu rahvastikutrendide mõtestamiseks ja probleemidele lahenduste leidmiseks.
+				%a.blue-button(href="/arutelud/") Loe rohkem
 
 			%li.join-through
 				%img(src="/assets/icon-faces.svg")
-				%h3.subsubheading Osale arutelul
 				%p.paragraph
-					Tule ja too oma mõtted arutellu, kus sündivad lahendused jõuavad 
-					otsustajateni nii omavalitsustes kui riigis. Vaata, kus ja millal 
-					on arutelud üle Eesti plaanitud, vali sobivaim ning pane end osalejana kirja. 
-				%a.white-button(href="/arutelud/") Osalen
+					Aruteludel osales #{past_people_count} inimest, kes pakkusid ideekorjesse #{ideas_count} lahendusideed.
+				%a.blue-button(href="/tulemused/") Loe rohkem
 
 			%li.join-through
 				%img(src="/assets/icon-laptop.svg")
-				%h3.subsubheading Tee ettepanek veebis
 				%p.paragraph
-					Kui sa siiski ei jõudnud arutelule või sul tuli pärast seda veel 
-					häid mõtteid, on novembrikuu viimasel nädalal võimalik teha 
-					ettepanekuid ka avalikul veebiplatvormil. 
-				%a.blue-button(href="/tulemused/") Kirjutan
+					Veebi kaudu esitati veel hulk täiendavaid lahendusideid.
+				%a.blue-button(href="/tulemused/") Loe rohkem
 
-%section#counter.white-section
+%section#results.white-section
 	%center
-		%h2.subheading Hetkeks on...
-		%ul
-			- past = discussions.select(&:past?)
-			- past_people = past.map(&:people_count).sum
-			%li <em>#{format("%02d", past.size)}</em> arutelu korraldatud
-			%li <em>#{format("%02d", past_people)}</em> inimest osalenud aruteludes
-
-		%p
-			%a.orange-button(href="/tulemused/") Tutvu tulemustega
-
-%section.grey-section
-	%center
-		%h2.subheading Arutelude kaart
-
+		%h2.subheading Lahendused probleemide kaupa
 		%p.paragraph
-			NB! Kui soovid osaleda arutelul, palun kirjuta konkreetse arutelu
-			korraldajale. Sa näed tema andmeid, kui vajutad kaardil ikoonile.
-			Kaarti saad suurendada (+), mis toob nähtavale rohkem arutelusid.
+			Arutelude vormis korraldatud ideekorje aitas kaardistada ligi sada lahendusteed, ettepanekuid lisandus ka veebipõhise ideekorje kaudu. Väljapakutud lahenduskäike saab uurida lahendatavate probleemide kaupa, number probleemi ees viitab lahenduste arvule. Konkreetsed ettepanekud vormuvad kogutud mõtetest veebruari lõpuks - peale materjali sünteesi, ekspertide mõjuhinnanguid ning 2019. aasta algusesse plaanitud ühisloomet.
 
-%section#map
-	%center= render "/_map.haml", discussions: discussions
+		= render "/_solutions.haml", problems: problems
+
+		%p.centered
+			%a.blue-button(href="/tulemused/") Vaata tagasisidet
+

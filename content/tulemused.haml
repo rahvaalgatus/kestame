@@ -71,31 +71,4 @@ page: results
 		%p.paragraph
 			Arutelude vormis korraldatud ideekorje aitas kaardistada ligi sada lahendusteed, ettepanekuid lisandus ka veebipõhise ideekorje kaudu. Väljapakutud lahenduskäike saab uurida lahendatavate probleemide kaupa, number probleemi ees viitab lahenduste arvule. Konkreetsed ettepanekud vormuvad kogutud mõtetest veebruari lõpuks - peale materjali sünteesi, ekspertide mõjuhinnanguid ning 2019. aasta algusesse plaanitud ühisloomet.
 
-		:ruby
-			TITLES = {
-				"population" => "Sündimus",
-				"migration" => "Ränne",
-				"work" => "Tööhõive"
-			}
-
-		#solutions
-			- %w[population migration work].each do |category|
-				- probs = problems[category].select {|p| p.solutions.size > 0 }
-				- title = TITLES[category]
-
-				.solutions-of(id="#{category}-solutions")
-					%h3= title
-					%ol.problems
-						- probs.sort_by {|p| p.solutions.size }.reverse.each do |problem|
-							%li.problem
-								%input(id="#{problem.id}-solutions" type="checkbox")
-
-								%label(for="#{problem.id}-solutions")
-									%i.chevron
-									%span.count= problem.solutions.size
-									%p= problem.title
-
-								%ol.problem-solutions
-									- problem.solutions.each do |solution|
-										%li
-											%span= solution
+		= render "/_solutions.haml", problems: problems
