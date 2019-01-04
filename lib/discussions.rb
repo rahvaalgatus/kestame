@@ -31,6 +31,10 @@ Discussion = Struct.new(
 	def until
 		self.at + 3600 * self.duration
 	end
+
+	def has_organizer?
+		!self.organizer_name.nil?
+	end
 end
 
 Problem = Struct.new(:id, :title, :category, :rank, :solutions)
