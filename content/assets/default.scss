@@ -20,6 +20,17 @@ $orange: #ff4800;
 $population-problems-color: $orange;
 $migration-problems-color: #808284;
 $work-problems-color: $green;
+$population-solutions-color: $orange;
+$national-migration-solutions-color: #808284;
+$international-migration-solutions-color: #a7a9ab;
+$work-solutions-color: $green;
+
+$solution-colors: (
+	population: $population-solutions-color,
+	national-migration: $national-migration-solutions-color,
+	international-migration: $international-migration-solutions-color,
+	work: $work-solutions-color,
+);
 
 @mixin desktop {
   @media only screen and (min-width: $tablet-width + 1px) { @content }
@@ -119,11 +130,10 @@ center {
 	& > * { margin-right: auto }
 }
 
-.white-section {
-	& + .white-section center { padding-top: 0; }
-}
-
 .grey-section { background-color: $light-grey; }
+
+.white-section + .white-section center { padding-top: 0; }
+.grey-section + .grey-section center { padding-top: 0; }
 
 .text-section {
 	font-size: $text-size;
@@ -162,7 +172,7 @@ center {
 	line-height: 1.5;
 
 	@include mobile {
-		font-size: 2rem;
+		font-size: 2.7rem;
 	}
 }
 
@@ -462,8 +472,8 @@ center {
 	}
 }
 
-#home-page #solutions,
-#results-page #solutions {
+#home-page #problems-with-solutions,
+#results-page #problems-with-solutions {
 	$padding: 1rem;
 	margin-top: 4rem;
 	margin-left: -$padding;
@@ -476,6 +486,7 @@ center {
 		vertical-align: top;
 		font-size: $text-size;
 		color: white;
+		text-align: center;
 
 		@include tablet-and-mobile {
 			width: auto;
@@ -496,7 +507,8 @@ center {
 		}
 
 		.problems {
-			margin-top: 2rem;
+			margin: 2rem 0;
+			text-align: left;
 		}
 
 		.problem {
@@ -582,28 +594,30 @@ center {
 		}
 	}
 
-	#population-solutions h3,
-	#population-solutions .problem {
+	#population-problems-with-solutions h3,
+	#population-problems-with-solutions .problem {
 		background-color: $population-problems-color;
 	}
 
-	#population-solutions .problem-solutions {
+	#population-problems-with-solutions .problem-solutions {
 		background-color: lighten($population-problems-color, 43%);
 	}
 
-	#migration-solutions h3,
-	#migration-solutions .problem {
+	#migration-problems-with-solutions h3,
+	#migration-problems-with-solutions .problem {
 		background-color: $migration-problems-color;
 	}
 
-	#migration-solutions .problem-solutions {
+	#migration-problems-with-solutions .problem-solutions {
 		background-color: lighten($migration-problems-color, 40%);
 	}
 
-	#work-solutions h3,
-	#work-solutions .problem { background-color: $work-problems-color; }
+	#work-problems-with-solutions h3,
+	#work-problems-with-solutions .problem {
+		background-color: $work-problems-color;
+	}
 
-	#work-solutions .problem-solutions {
+	#work-problems-with-solutions .problem-solutions {
 		background-color: lighten($work-problems-color, 40%);
 	}
 }
@@ -745,6 +759,205 @@ center {
 		#migration-problem-group:checked ~ #migration-problems,
 		#work-problem-group:checked ~ #work-problems {
 			display: block;
+		}
+	}
+}
+
+#home-page #solutions,
+#results-page #solutions,
+#solutions-page #solutions {
+	$padding: 1rem;
+	$single-column-breakpoint: 719px;
+	margin-top: 4rem;
+	margin-left: -$padding;
+	margin-right: -$padding;
+
+	@media only screen and (max-width: $single-column-breakpoint) {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	nav {
+		margin: 0 $padding;
+		margin-bottom: 2rem;
+		border-bottom: 1rem solid transparent;
+
+		label {
+			display: inline-block;
+			width: 25%;
+			height: 5rem;
+			cursor: pointer;
+			font-size: 1.6rem;
+			border-top-left-radius: 0.5rem;
+			border-top-right-radius: 0.5rem;
+			color: white;
+			line-height: 5rem;
+			text-align: center;
+			font-weight: bold;
+		}
+
+		@each $category, $color in $solution-colors {
+			label[for=#{$category}-solutions-toggle] { background-color: $color; }
+		}
+
+		@include tablet-and-mobile {
+			margin-left: 0;
+			margin-right: 0;
+		}
+
+		@include tablet-and-mobile {
+			display: inline-block;
+
+			label {
+				width: auto;
+				padding: 0 2rem;
+			}
+		}
+
+		@media only screen and (max-width: $single-column-breakpoint) {
+			display: none;
+		}
+	}
+
+	@each $category, $color in $solution-colors {
+		input##{$category}-solutions-toggle:checked ~ nav { border-color: $color; }
+
+		input##{$category}-solutions-toggle:checked ~ ##{$category}-solutions {
+			display: block;
+		}
+	}
+
+	.solutions-of {
+		display: none;
+
+		@media only screen and (max-width: $single-column-breakpoint) {
+			display: block;
+
+			& + .solutions-of { margin-top: 4rem; }
+		}
+	}
+
+	.solutions-for {
+		padding: 0 $padding;
+		width: 33.33%;
+		display: inline-block;
+		vertical-align: top;
+		font-size: $text-size;
+		color: white;
+
+		@include tablet-and-mobile {
+			width: auto;
+			padding: 0;
+			display: block;
+
+			& + .solutions-of {
+				margin-top: 4rem;
+			}
+		}
+
+		h3 {
+			border-radius: 0.5rem;
+			line-height: 5rem;
+			text-align: center;
+			font-weight: bold;
+			margin-bottom: 2rem;
+
+			.category { display: none; }
+
+			@media only screen and (max-width: $single-column-breakpoint) {
+				text-align: left;
+				font-family: $headline-font;
+				background-color: transparent !important;
+				font-weight: normal;
+				line-height: 1.5;
+				color: $blue;
+				font-size: 2.4rem;
+				margin-bottom: 2rem;
+
+				.category { display: inline; }
+			}
+		}
+
+		@media only screen and (max-width: $single-column-breakpoint) {
+			& + .solutions-for { margin-top: 4rem; }
+		}
+	}
+
+	.solution {
+		$chevron-width: 2.4rem;
+		border-radius: 0.5rem;
+		font-size: 1.3rem;
+		line-height: 1.4;
+
+		// Some #hashtags are way too long there.
+		word-wrap: break-word;
+
+		label {
+			display: block;
+			padding: 1.2rem 1rem 1.2rem 2rem;
+			overflow: hidden;
+
+			&.with-details {
+				cursor: pointer;
+			}
+
+			.chevron {
+				float: right;
+				background: url("/assets/chevron-down.svg") center no-repeat;
+				width: $chevron-width;
+				height: $chevron-width + 1rem;
+			}
+
+			.chevron + p { margin-right: $chevron-width; }
+		}
+
+		.solution-details {
+			display: none;
+			color: black;
+			padding: 1.5rem;
+			border-bottom-left-radius: 0.5rem;
+			border-bottom-right-radius: 0.5rem;
+			box-shadow: inset 0 0.2rem 0 0 rgba(black, .2);
+			max-height: 30rem;
+			overflow: auto;
+
+			font-weight: normal;
+			font-size: 1.3rem;
+
+			@include tablet-and-mobile {
+				overflow: visible;
+				max-height: none;
+			}
+
+			h4 {
+				margin-top: 1rem;
+				font-weight: 600;
+			}
+
+			.solution-links {
+				a:link {
+					color: $link-blue;
+				}
+			}
+		}
+
+		input:checked ~ label .chevron {
+			background-image: url("/assets/chevron-up.svg");
+		}
+
+		input:checked ~ .solution-details { display: block; }
+
+		& + .solution { margin-top: 1rem; }
+	}
+
+	@each $category, $color in $solution-colors {
+		##{$category}-solutions h3,
+		##{$category}-solutions .solution {
+			background-color: $color;
+		}
+
+		##{$category}-solutions .solution-details {
+			background-color: lighten($color, 43%);
 		}
 	}
 }

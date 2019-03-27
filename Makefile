@@ -31,6 +31,9 @@ content/discussions.csv:
 content/problems.csv:
 	$(WGET) "https://docs.google.com/spreadsheets/d/e/2PACX-1vRNwMwDywEYPduSijldLYntzekHoMqkFqBaK9MUbGUpE63HG2bOyT7pJ_0IUNpsfVgm0dtFPqb8GYb_/pub?gid=1680285954&single=true&output=csv" -O "$@"
 
+content/solutions.csv:
+	$(WGET) "https://docs.google.com/spreadsheets/d/e/2PACX-1vS_4UJeS5zACFA5o_8iYW3EvL0JUg1WHpQPVCof7o6X93RVByOd5pKf0IbIa9PZ0ic4k7EEI3PFYVqX/pub?gid=142617889&single=true&output=csv" -O "$@"
+
 .PHONY: love
 .PHONY: compile autocompile
 .PHONY: server autoserver

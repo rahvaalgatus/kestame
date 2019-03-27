@@ -1,28 +1,60 @@
 :ruby
-	TITLES = {
+	SOLVERS = {
+		"government" => "Riigile",
+		"municipal" => "Kohalikele omavalitsustele",
+		"community" => "Kogukondadele"
+	}
+
+	CATEGORIES = {
 		"population" => "Sündimus",
-		"migration" => "Ränne",
+		"national-migration" => "Eesti-sisene ränne",
+		"international-migration" => "Piiriülene ränne",
 		"work" => "Tööhõive"
 	}
 
 #solutions
-	- %w[population migration work].each do |category|
-		- probs = problems[category].select {|p| p.solutions.size > 0 }
-		- title = TITLES[category]
+	- CATEGORIES.keys.each_with_index do |category, index|
+		%input(id="#{category}-solutions-toggle"
+			name="solutions"
+			type="radio"
+			hidden){checked: index == 0}
 
+	%nav
+		- CATEGORIES.each do |category, title|
+			%label(for="#{category}-solutions-toggle")= title
+
+	- solutions_by_category.each do |category, solutions_by_solver|
 		.solutions-of(id="#{category}-solutions")
-			%h3= title
-			%ol.problems
-				- probs.sort_by {|p| p.solutions.size }.reverse.each do |problem|
-					%li.problem
-						%input(id="#{problem.id}-solutions" type="checkbox")
+			- solutions_by_solver.each do |solver, solutions|
+				.solutions-for
+					%h3
+						%span.category= CATEGORIES[category] + ": "
+						= SOLVERS[solver]
 
-						%label(for="#{problem.id}-solutions")
-							%i.chevron
-							%span.count= problem.solutions.size
-							%p= problem.title
+					%ol.solutions
+						- solutions.each do |solution|
+							%li.solution
+								- if solution.problem
+									%input(id="#{solution.id}-solution" type="checkbox" hidden)
 
-						%ol.problem-solutions
-							- problem.solutions.each do |solution|
-								%li
-									%span= solution
+								- klass = solution.problem ? "with-details" : ""
+								%label(for="#{solution.id}-solution"){class: klass}
+									- if solution.problem
+										%i.chevron
+
+									%p= solution.text
+
+								- if solution.problem
+									.solution-details
+										%p= solution.problem
+
+										- unless solution.links.empty?
+											%h4 Ettepanek edasi suunatud:
+
+											%ul.solution-links
+												- solution.links.each do |name, url|
+													%li
+														- if url
+															%a(href=url)= name
+														- else
+															= name

@@ -60,12 +60,6 @@ page: home
 
 %section#results.white-section
 	%center
-		%h2.subheading Lahendused probleemide kaupa
-		%p.paragraph
-			Arutelude vormis korraldatud ideekorje aitas kaardistada ligi sada lahendusteed, ettepanekuid lisandus ka veebipõhise ideekorje kaudu. Väljapakutud lahenduskäike saab uurida lahendatavate probleemide kaupa, number probleemi ees viitab lahenduste arvule. Konkreetsed ettepanekud vormuvad kogutud mõtetest veebruari lõpuks - peale materjali sünteesi, ekspertide mõjuhinnanguid ning 2019. aasta algusesse plaanitud ühisloomet.
-
-		= render "/_solutions.haml", problems: problems
-
-		%p.centered
-			%a.blue-button(href="/tulemused/") Vaata tagasisidet
-
+		%h2.subheading Ettepanekud
+		- solutions_by_category = read_solutions(@items["/solutions.csv"])
+		= render "/_solutions.haml", solutions_by_category: solutions_by_category
