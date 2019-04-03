@@ -459,12 +459,6 @@ center {
 }
 
 #discussions-page {
-	#video {
-		background-color: $blue;
-		center { padding: 0; max-width: $text-section-width; }
-		iframe { width: 100%; height: 38rem; display: block; }
-	}
-
 	#discussions {
 		h3 { margin-bottom: 2rem; }
 
@@ -959,6 +953,12 @@ center {
 		##{$category}-solutions .solution-details {
 			background-color: lighten($color, 43%);
 		}
+	}
+}
+
+#solutions-page {
+	#solution-counts {
+		font-size: 1.6rem;
 	}
 }
 

@@ -6,14 +6,6 @@ page: discussions
 	%center
 		%h1= item[:title]
 
-%section#video
-	%center
-		%iframe(src="https://player.vimeo.com/video/296874043"
-			frameborder="0"
-			webkitallowfullscreen
-			mozallowfullscreen
-			allowfullscreen)
-
 %section.white-section.text-section
 	%center= @items["/arutelud.md"].compiled_content(snapshot: :text)
 
