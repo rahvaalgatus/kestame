@@ -9,5 +9,8 @@ Arutelude tulemusena kokku kogutud lahendusideed sõeluti ning mõjusamad said e
 - 5.02 teemaseminar II: [Eesti sisene ränne](https://rahvaalgatus.ee/initiatives/242f910e-f9c8-4e99-9d48-f3fd1e11b3b3).
 - 14.02 teemaseminar III: [tööhõive](https://rahvaalgatus.ee/initiatives/d02bb13b-6b6b-43f0-ab2f-08b3e67423dc).
 
-Loodame, et arutelud rahvastiku tuleviku üle kogukondades jätkuvad. Kui on huvi kasutada selleks väljatöötatud formaati, küsi julgelt materjale ja juhiseid.    
-ekute kujunemise protsessiga end kursis hoida [tellides teavituse siit](https://rahvaalgatus.ee/initiatives/d02bb13b-6b6b-43f0-ab2f-08b3e67423dc).
+Loodame, et arutelud rahvastiku tuleviku üle kogukondades jätkuvad. Kellel on huvi kasutada #kuidasmekestame aruteludeks väljatöötatud formaati, küsigu julgelt materjale ja juhiseid.    
+
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbOTc0ODYwMTEyXX0=
+-->
