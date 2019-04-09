@@ -62,3 +62,22 @@
 															%a(href=url)= name
 														- else
 															= name
+
+%h2.subheading Edasised sammud
+%p.paragraph
+	Ettepanekud on asjaomastele riigiasutustele edasi antud ja kui ka kõik nendest ei ole kohe jõustamiseks toetust leidnud, jätkub arutelu kogukondades väljapakutud lahenduste üle paljude valdkondade tulevikustrateegiaid läbi rääkides. Ettepanekud puudutavad enam kui kümmet valdkonda,  kõige enam tööpoliitikat, regionaalpoliitikat, hariduspoliitikat ning laste- ja perepoliitikat. 
+
+- solutions = solutions_by_category.values.map(&:values).flatten
+- links = solutions.map(&:links).flatten(1).reject(&:nil?)
+- links_by_name = links.group_by {|name, url| name }
+- sorted_links = links_by_name.sort_by {|name, links| -links.size }
+
+%ol#next-solution-steps
+	- sorted_links[0..4].each do |name, links|
+		%li
+			- ratio = links.size.to_f / sorted_links[0][1].size.to_f
+			- size = 3 + 3 * ratio
+			- style = "width: #{size}rem; line-height: #{size}rem"
+			%span.link-count
+				%i{:style => style}= links.size
+			= " #{name}"

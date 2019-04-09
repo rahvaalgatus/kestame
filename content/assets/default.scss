@@ -174,6 +174,10 @@ center {
 	@include mobile {
 		font-size: 2.7rem;
 	}
+
+	& ~ .subheading {
+		margin-top: 4rem;
+	}
 }
 
 .subsubheading,
@@ -758,8 +762,7 @@ center {
 }
 
 #home-page #solutions,
-#results-page #solutions,
-#solutions-page #solutions {
+#results-page #solutions {
 	$padding: 1rem;
 	$single-column-breakpoint: 719px;
 	margin-top: 4rem;
@@ -956,9 +959,30 @@ center {
 	}
 }
 
-#solutions-page {
-	#solution-counts {
-		font-size: 1.6rem;
+#home-page #next-solution-steps,
+#results-page #next-solution-steps {
+	margin-top: 4rem;
+	font-size: 1.6rem;
+
+	li + li {
+		margin-top: 0.5rem;
+	}
+
+	.link-count {
+		display: inline-block;
+		text-align: center;
+		width: 6rem;
+		margin-right: 2rem;
+		margin-bottom: 1rem;
+
+		i {
+			display: inline-block;
+			border-radius: 50%;
+			background-color: $blue;
+			text-align: center;
+			font-weight: bold;
+			color: white;
+		}
 	}
 }
 
