@@ -77,3 +77,34 @@ page: results
 	%center
 		- solutions_by_category = read_solutions(@items["/solutions.csv"])
 		= render "/_solutions.haml", solutions_by_category: solutions_by_category
+
+%section.grey-section.text-section
+	%center
+		%h2.subheading Edasised sammud
+		:markdown
+			Projektimeeskond andis ettepanekud kirjalike kokkuvõtetena ministeeriumitele, riigikantseleile ning piirkondlikele arendustöötajatele üle järgmiselt:
+
+			- [Ettepanekud Haridus- ja Teadusministeeriumile](/Ettepanekud_Haridus- ja Teadusministeerium.pdf)
+			- [Ettepanekud Kultuuriministeeriumile](/Ettepanekud_Kultuuriministeerium.pdf)
+			- [Ettepanekud Majandus- ja Kommunikatsiooniministeeriumile](/Ettepanekud_Majandus- ja Kommunikatsiooniministeerium.pdf)
+			- [Ettepanekud Rahandusministeeriumile](/Ettepanekud_Rahandusministeerium.pdf)
+			- [Ettepanekud Riigikantseleile (Eesti 2035)](/Ettepanekud_Riigikantselei.pdf)
+			- [Ettepanekud Sotsiaalministeeriumile](/Ettepanekud_Sotsiaalministeerium.pdf)
+			- [Ettepanekud kohalikele ja piirkondlikele arendustöötajatele](/Ettepanekud_Kohalikud omavalitsused.pdf)
+
+			Kui kõik ideed ei ole tänaseks toetust leidnud, jätkub loodetavasti arutelu väljapakutud lahenduste üle paljude valdkondade tulevikustrateegiaid läbi rääkides. Ettepanekud puudutavad enam kui kümmet valdkonda,  kõige enam tööpoliitikat, regionaalpoliitikat, hariduspoliitikat ning laste- ja perepoliitikat. 
+
+		- solutions = solutions_by_category.values.map(&:values).flatten
+		- links = solutions.map(&:links).flatten(1).reject(&:nil?)
+		- links_by_name = links.group_by {|name, url| name }
+		- sorted_links = links_by_name.sort_by {|name, links| -links.size }
+
+		%ol#next-solution-steps
+			- sorted_links[0..4].each do |name, links|
+				%li
+					- ratio = links.size.to_f / sorted_links[0][1].size.to_f
+					- size = 3 + 3 * ratio
+					- style = "width: #{size}rem; line-height: #{size}rem"
+					%span.link-count
+						%i{:style => style}= links.size
+					= " #{name}"
