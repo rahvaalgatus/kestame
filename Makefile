@@ -23,7 +23,7 @@ autoserver:
 
 deploy: ENV = production
 deploy: compile
-	@$(NANOC) deploy -t default
+	@$(NANOC) deploy --target default
 	
 content/markdowns:
 	rclone copy gdrive:"Inimvara [jagatud]/Inimvara_tekstid/kestame md failid" content
