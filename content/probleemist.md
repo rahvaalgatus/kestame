@@ -55,7 +55,7 @@ Eestis on täna töövõimetuspensionil 10% tööealisest elanikkonnast (üle 90
 - [Eesti ühiskonna integratsiooni monitooring. Kultuuriministeerium, 2017](http://www.kul.ee/et/EIM2017)
 - [Eesti elanikkonna hoiakud kolmandatest riikidest sisserändajate suhtes Euroopa Sotsiaaluuringute andmetes. Tartu Ülikool, 2016](https://www.yti.ut.ee/sites/default/files/www_ut/randehoiakute_raport_loplik.pdf)
 - [Rahvusvaheline mobiilsus ja töö. Arenguseire Keskus, 2018](https://www.riigikogu.ee/wpcms/wp-content/uploads/2017/09/Rahvusvaheline-mobiilsus-ja-t%C3%B6%C3%B6.pdf)
-- [Suud puhtaks: Tööjõupuudus. 13.12.2017](https://www.err.ee/648455/suud-puhtaks-kas-eesti-majandus-vajab-valistoojoudu) [](https://www.err.ee/648455/suud-puhtaks-kas-eesti-majandus-vajab-valistoojoudu)
+- [Suud puhtaks: Tööjõupuudus. 13.12.2017](https://www.err.ee/648455/suud-puhtaks-kas-eesti-majandus-vajab-valistoojoudu)
 - [Eesti tööturg täna ja homme. SA Kutsekoda Tallinn, 2017](http://oska.kutsekoda.ee/wp-content/uploads/2017/12/Eesti-t%C3%B6%C3%B6turg-t%C3%A4na-ja-homme2017.pdf)
 - [Hõivatud hõivestsenaariumide ja EIA rahvastikuprognoosi taustal. Arenguseire Keskus, 2018](https://www.riigikogu.ee/wpcms/wp-content/uploads/2017/09/ASK_h6ive_ja_rahvastik.pdf)
 - [Suud puhtaks: Vanemaealised tööturul. 25.04.2018](https://www.err.ee/826173/suud-puhtaks-blogiulevaade-miks-torjutakse-tooturul-vanemaealisi)

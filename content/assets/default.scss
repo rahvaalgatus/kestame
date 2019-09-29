@@ -205,7 +205,13 @@ center {
 .text-section a {
 	&:not(.blue-button):not(.image-link) {
 		border-bottom: 3px solid $link-blue;
+
+		&:focus { outline: 1px dashed $blue; }
 		&:hover { color: $link-blue; }
+	}
+
+	&.image-link {
+		&:focus { outline: 1px dashed $blue; }
 	}
 }
 
@@ -223,9 +229,27 @@ center {
 	font-size: 1.4rem;
 }
 
+.blue-button:focus,
+.white-button:focus {
+	box-shadow: inset 0 0 0 .2rem white, 0 0 0 .2rem $blue; 
+}
+
 .blue-button { background: $blue; color: white; }
-.green-button { background: $green; color: white; }
-.orange-button { background: $orange; color: white; }
+
+.green-button {
+	background: $green;
+	color: white;
+
+	&:focus { box-shadow: inset 0 0 0 .2rem white, 0 0 0 .2rem $green; }
+}
+
+.orange-button {
+	background: $orange;
+	color: white;
+
+	&:focus { box-shadow: inset 0 0 0 .2rem white, 0 0 0 .2rem $orange; }
+}
+
 .white-button { background: white; color: $blue; border: 1px solid $blue; }
 
 #nav,
@@ -240,11 +264,8 @@ center {
 		font-weight: bold;
 		font-size: 1.8rem;
 		font-family: $headline-font;
-	}
 
-	menu a {
-		display: inline-block;
-		padding: 0 1rem;
+		&:focus { outline: 1px dashed rgba(white, 0.8); }
 	}
 
 	menu {
@@ -256,6 +277,8 @@ center {
 		border: 1px solid transparent;
 		font-size: 1.3rem;
 		margin-left: 1rem;
+		display: inline-block;
+		padding: 0 1rem;
 
 		&.selected {
 			color: $blue;
@@ -263,9 +286,8 @@ center {
 			font-weight: bold;
 		}
 
-		&:hover {
-			border-color: white;
-		}
+		&:focus { border: 1px dashed rgba(white, 0.8); }
+		&:hover { border-color: white; }
 	}
 
 	@include tablet {
@@ -996,8 +1018,6 @@ center {
 		margin-bottom: 1rem;
 	}
 
-	a { text-decoration: underline; }
-
 	#contact,
 	#supporters {
 		vertical-align: top;
@@ -1010,6 +1030,12 @@ center {
 
 	#contact {
 		width: 33%;
+
+		a {
+			text-decoration: underline;
+
+			&:focus { outline: 1px dashed rgba(white, 0.8); }
+		}
 
 		@include tablet { width: 50%; }
 		@include mobile { width: auto; }
@@ -1027,6 +1053,12 @@ center {
 		li {
 			display: inline-block;
 			margin-right: 2rem;
+		}
+
+		a {
+			display: inline-block;
+
+			&:focus { outline: 1px dashed rgba(white, 0.8); }
 		}
 
 		@include tablet {
