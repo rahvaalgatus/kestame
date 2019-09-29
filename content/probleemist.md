@@ -61,8 +61,3 @@ Eestis on täna töövõimetuspensionil 10% tööealisest elanikkonnast (üle 90
 - [Suud puhtaks: Vanemaealised tööturul. 25.04.2018](https://www.err.ee/826173/suud-puhtaks-blogiulevaade-miks-torjutakse-tooturul-vanemaealisi)
 
 </center></section>
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMDM4MTE4NCwyNjg3NDgxMjQsLTU0NT
-A2OTg4LC0yNDI3OTk3NzVdfQ==
--->

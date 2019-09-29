@@ -14,7 +14,3 @@ Arutelu edukaks läbiviimiseks toetame arutelujuhti vajalike juhiste, töölehte
 <section class="white-section form-section"><center>
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdMN6lfa7Bl3OlUcFIGZLpzWUaL9oTgzKXQoRFnX2MD7IeDrA/viewform?embedded=true" height="2020" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
 </center></section>
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbNzQwMDcxMDgwXX0=
--->
